@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="MiniShield-Extension/images/logo.png" width="200px" alt="MiniShield-Extension Logo"/>
+    <img src="https://github.com/dudhhdzk/MiniShield-Extension/blob/main/images/logo.png" width="200px" alt="MiniShield-Extension Logo"/>
 </p>
 
 <h3 align="center">Comprehensive privacy protection, security, and smart website analysis</h3>
