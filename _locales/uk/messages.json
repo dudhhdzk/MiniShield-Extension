@@ -1,0 +1,407 @@
+{
+  "extName": {
+    "message": "MiniShield"
+  },
+  "extDescription": {
+    "message": "Мультиінструмент без реклами. Аналіз EULA/ToS/Політики конфіденційності та безпечне автозаповнення"
+  },
+  "popupTitle": {
+    "message": "MiniShield"
+  },
+  "popupSlogan": {
+    "message": "Мультиінструмент без реклами"
+  },
+  "btnScan": {
+    "message": "Перевірити сайт"
+  },
+  "btnCookies": {
+    "message": "Заблокувати cookie"
+  },
+  "btnSettings": {
+    "message": "Усі налаштування"
+  },
+  "toggleAutoScan": {
+    "message": "Автосканування"
+  },
+  "toggleAI": {
+    "message": "ШІ-аналіз (Gemini)"
+  },
+  "toggleAutoFill": {
+    "message": "Автозаповнення"
+  },
+  "settingsTitle": {
+    "message": "Налаштування"
+  },
+  "sectionProfile": {
+    "message": "Профіль для автозаповнення"
+  },
+  "sectionAPI": {
+    "message": "Gemini API"
+  },
+  "sectionAnalysis": {
+    "message": "Аналіз"
+  },
+  "sectionCookiePolicy": {
+    "message": "Cookie-політика"
+  },
+  "sectionProtection": {
+    "message": "Захист"
+  },
+  "sectionInterface": {
+    "message": "Інтерфейс"
+  },
+  "sectionWhitelist": {
+    "message": "Білий список"
+  },
+  "sectionHistory": {
+    "message": "Історія аналізів"
+  },
+  "firstName": {
+    "message": "Ім'я"
+  },
+  "lastName": {
+    "message": "Прізвище"
+  },
+  "email": {
+    "message": "Email"
+  },
+  "phone": {
+    "message": "Телефон"
+  },
+  "username": {
+    "message": "Логін"
+  },
+  "birthDate": {
+    "message": "Дата народження"
+  },
+  "organization": {
+    "message": "Організація"
+  },
+  "address": {
+    "message": "Адреса"
+  },
+  "country": {
+    "message": "Країна"
+  },
+  "city": {
+    "message": "Місто"
+  },
+  "apiKey": {
+    "message": "API-ключ"
+  },
+  "apiKeyHint": {
+    "message": "Отримати:"
+  },
+  "autoScan": {
+    "message": "Автосканування"
+  },
+  "autoScanDesc": {
+    "message": "Аналізувати при відкритті сторінки"
+  },
+  "autoScanAll": {
+    "message": "Автоскан всіх сайтів"
+  },
+  "autoScanAllDesc": {
+    "message": "Потрібен дозвіл на всі сайти"
+  },
+  "useAI": {
+    "message": "ШІ-аналіз (Gemini)"
+  },
+  "useAIDesc": {
+    "message": "Глибокий аналіз документів нейромережею"
+  },
+  "autoFill": {
+    "message": "Автозаповнення"
+  },
+  "autoFillDesc": {
+    "message": "Пропонувати заповнити форми з профілю"
+  },
+  "riskLevel": {
+    "message": "Рівень ризиків"
+  },
+  "riskAll": {
+    "message": "Усі"
+  },
+  "riskHigh": {
+    "message": "Високі+"
+  },
+  "riskCritical": {
+    "message": "Лише критичні"
+  },
+  "smartCookieBlock": {
+    "message": "Розумне блокування cookie"
+  },
+  "smartCookieBlockDesc": {
+    "message": "Класифікація та блокування за категоріями"
+  },
+  "catNecessary": {
+    "message": "Необхідні"
+  },
+  "catNecessaryDesc": {
+    "message": "Авторизація, кошик, безпека"
+  },
+  "catFunctional": {
+    "message": "Функціональні"
+  },
+  "catFunctionalDesc": {
+    "message": "Мова, тема, налаштування інтерфейсу"
+  },
+  "catAnalytics": {
+    "message": "Аналітичні"
+  },
+  "catAnalyticsDesc": {
+    "message": "Google Analytics, Yandex Metrika тощо"
+  },
+  "catAdvertising": {
+    "message": "Рекламні"
+  },
+  "catAdvertisingDesc": {
+    "message": "Таргетинг, ретаргетинг, рекламні мережі"
+  },
+  "catAllowed": {
+    "message": "Дозволені"
+  },
+  "antiTracker": {
+    "message": "Антитрекер"
+  },
+  "antiTrackerDesc": {
+    "message": "Блокування скриптів відстеження"
+  },
+  "socialBlock": {
+    "message": "Блокування соцмереж"
+  },
+  "socialBlockDesc": {
+    "message": "Блокувати відстеження через віджети соцмереж"
+  },
+  "notifications": {
+    "message": "Сповіщення"
+  },
+  "notificationsDesc": {
+    "message": "Сповіщати про виявлені ризики"
+  },
+  "showBadge": {
+    "message": "Показувати бейдж"
+  },
+  "showBadgeDesc": {
+    "message": "Плаваюча кнопка-щит на сторінках"
+  },
+  "whitelistBuiltIn": {
+    "message": "Вбудовані: Google, Bing, Yandex, DuckDuckGo, Yahoo, YouTube"
+  },
+  "whitelistAdd": {
+    "message": "Додати"
+  },
+  "historyClear": {
+    "message": "Очистити історію"
+  },
+  "historyEmpty": {
+    "message": "Поки порожньо"
+  },
+  "saved": {
+    "message": "Збережено"
+  },
+  "findings": {
+    "message": "знахідок"
+  },
+  "panelTitle": {
+    "message": "Аналіз ризиків"
+  },
+  "scanning": {
+    "message": "Сканування..."
+  },
+  "noRisks": {
+    "message": "Ризиків не виявлено"
+  },
+  "rateLimitMsg": {
+    "message": "Ліміт запитів API вичерпано. Зачекайте хвилину."
+  },
+  "socialBlocked": {
+    "message": "віджетів соцмереж заблоковано"
+  },
+  "errorTrackBlock": {
+    "message": "Блокування збору помилок"
+  },
+  "errorTrackBlockDesc": {
+    "message": "Sentry, Bugsnag, Rollbar, LogRocket, TrackJS, Raygun та ін."
+  },
+  "btnAutoFill": {
+    "message": "Автозаповнення"
+  },
+  "safeBrowsing": {
+    "message": "Safe Browsing API перевірка"
+  },
+  "safeBrowsingDesc": {
+    "message": "Перевіряти кожен сайт через Google Safe Browsing API"
+  },
+  "safeBrowsingKey": {
+    "message": "API-ключ Safe Browsing"
+  },
+  "safeBrowsingKeyHint": {
+    "message": "Створити ключ:"
+  },
+  "safeBrowsingKeyHint2": {
+    "message": "Увімкніть 'Safe Browsing API' в Google Cloud Console"
+  },
+  "sevCritical": {
+    "message": "КРИТИЧНИЙ"
+  },
+  "sevHigh": {
+    "message": "ВИСОКИЙ"
+  },
+  "sevMedium": {
+    "message": "СЕРЕДНІЙ"
+  },
+  "sevLow": {
+    "message": "НИЗЬКИЙ"
+  },
+  "readOriginal": {
+    "message": "Читати в оригіналі →"
+  },
+  "scoreLow": {
+    "message": "Низький ризик"
+  },
+  "scoreMedium": {
+    "message": "Середній ризик"
+  },
+  "scoreHigh": {
+    "message": "Високий ризик"
+  },
+  "rateLimitPanel": {
+    "message": "Ліміт API вичерпано - ІІ-аналіз тимчасово недоступний."
+  },
+  "cookieBannerDone": {
+    "message": "Cookie-банер оброблено"
+  },
+  "trackersCount": {
+    "message": "Трекерів"
+  },
+  "aiAnalysis": {
+    "message": "ІІ-аналіз"
+  },
+  "noDocsFound": {
+    "message": "Документи EULA/ToS/Політика конфіденційності не знайдено."
+  },
+  "aiRisks": {
+    "message": "Ризики ІІ"
+  },
+  "patterns": {
+    "message": "Патерни"
+  },
+  "noRisksFound": {
+    "message": "Явних ризиків не виявлено"
+  },
+  "checkboxes": {
+    "message": "Прапорці"
+  },
+  "btnSafeAutofill": {
+    "message": "Безпечне автозаповнення"
+  },
+  "btnAutoCookie": {
+    "message": "Авто-заборона cookie"
+  },
+  "finalClick": {
+    "message": "Фінальний клік - за вами!"
+  },
+  "filledCount": {
+    "message": "Заповнено"
+  },
+  "noData": {
+    "message": "Немає даних"
+  },
+  "processed": {
+    "message": "Оброблено"
+  },
+  "kChars": {
+    "message": "K символів"
+  },
+  "sectionSecurity": {
+    "message": "Безпека сайтів"
+  },
+  "virusTotal": {
+    "message": "VirusTotal"
+  },
+  "virusTotalDesc": {
+    "message": "Перевірка URL 70+ антивірусами (безкоштовний ключ)"
+  },
+  "virusTotalKey": {
+    "message": "API-ключ VirusTotal"
+  },
+  "virusTotalKeyHint": {
+    "message": "Безкоштовний ключ:"
+  },
+  "phishTank": {
+    "message": "PhishTank"
+  },
+  "phishTankDesc": {
+    "message": "Перевірка по базі фішингових сайтів (безкоштовно, без ключа)"
+  },
+  "urlHaus": {
+    "message": "URLhaus (abuse.ch)"
+  },
+  "urlHausDesc": {
+    "message": "Перевірка по базі шкідливих URL (безкоштовно, без ключа)"
+  },
+  "domainAge": {
+    "message": "Аналіз віку домену (WHOIS)"
+  },
+  "domainAgeDesc": {
+    "message": "Попереджувати про нещодавно створені домени (< 30 днів)"
+  },
+  "formSecurity": {
+    "message": "Перевірка безпеки форм"
+  },
+  "formSecurityDesc": {
+    "message": "Блокувати якщо форма логіну відправляє дані на інший домен"
+  },
+  "cryptoMiner": {
+    "message": "Сканування на криптомайнери"
+  },
+  "cryptoMinerDesc": {
+    "message": "Виявлення та блокування прихованих майнерів (Coinhive та ін.)"
+  },
+  "detectHiddenIframes": {
+    "message": "Приховані iframe"
+  },
+  "detectHiddenIframesDesc": {
+    "message": "Виявлення та видалення невидимих iframe (clickjacking, малварь)"
+  },
+  "detectObfuscatedJS": {
+    "message": "Обфусцкований JS"
+  },
+  "detectObfuscatedJSDesc": {
+    "message": "Евристика на закодовані скрипти (eval/atob, fromCharCode)"
+  },
+  "detectRedirects": {
+    "message": "Ланцюжки редиректів"
+  },
+  "detectRedirectsDesc": {
+    "message": "Попередження про підозрілі редиректи через різні домени"
+  },
+  "detectExtInstall": {
+    "message": "Встановлення розширень"
+  },
+  "detectExtInstallDesc": {
+    "message": "Виявлення спроб спровокувати встановлення розширень браузера"
+  },
+  "tabReport": {
+    "message": "Звiт"
+  },
+  "reportDesc": {
+    "message": "Зробiть скрiншот та вiдправте звiт про помилку"
+  },
+  "reportPlaceholder": {
+    "message": "Опишiть проблему..."
+  },
+  "reportScreenshot": {
+    "message": "Скрiншот"
+  },
+  "reportSend": {
+    "message": "Вiдправити"
+  },
+  "reportSent": {
+    "message": "Звiт вiдправлено. Дякуємо!"
+  },
+  "reportError": {
+    "message": "Помилка вiдправки"
+  }
+}

@@ -1,0 +1,407 @@
+{
+  "extName": {
+    "message": "MiniShield"
+  },
+  "extDescription": {
+    "message": "Ad-free multitool. EULA/ToS/Privacy Policy analysis and safe autofill"
+  },
+  "popupTitle": {
+    "message": "MiniShield"
+  },
+  "popupSlogan": {
+    "message": "Ad-free multitool"
+  },
+  "btnScan": {
+    "message": "Scan site"
+  },
+  "btnCookies": {
+    "message": "Block cookies"
+  },
+  "btnSettings": {
+    "message": "All settings"
+  },
+  "toggleAutoScan": {
+    "message": "Auto-scan"
+  },
+  "toggleAI": {
+    "message": "AI analysis (Gemini)"
+  },
+  "toggleAutoFill": {
+    "message": "Autofill"
+  },
+  "settingsTitle": {
+    "message": "Settings"
+  },
+  "sectionProfile": {
+    "message": "Profile for autofill"
+  },
+  "sectionAPI": {
+    "message": "Gemini API"
+  },
+  "sectionAnalysis": {
+    "message": "Analysis"
+  },
+  "sectionCookiePolicy": {
+    "message": "Cookie Policy"
+  },
+  "sectionProtection": {
+    "message": "Protection"
+  },
+  "sectionInterface": {
+    "message": "Interface"
+  },
+  "sectionWhitelist": {
+    "message": "Whitelist"
+  },
+  "sectionHistory": {
+    "message": "Analysis history"
+  },
+  "firstName": {
+    "message": "First name"
+  },
+  "lastName": {
+    "message": "Last name"
+  },
+  "email": {
+    "message": "Email"
+  },
+  "phone": {
+    "message": "Phone"
+  },
+  "username": {
+    "message": "Username"
+  },
+  "birthDate": {
+    "message": "Date of birth"
+  },
+  "organization": {
+    "message": "Organization"
+  },
+  "address": {
+    "message": "Address"
+  },
+  "country": {
+    "message": "Country"
+  },
+  "city": {
+    "message": "City"
+  },
+  "apiKey": {
+    "message": "API key"
+  },
+  "apiKeyHint": {
+    "message": "Get key:"
+  },
+  "autoScan": {
+    "message": "Auto-scan"
+  },
+  "autoScanDesc": {
+    "message": "Analyze when opening a page"
+  },
+  "autoScanAll": {
+    "message": "Auto-scan all sites"
+  },
+  "autoScanAllDesc": {
+    "message": "Requires permission for all sites"
+  },
+  "useAI": {
+    "message": "AI analysis (Gemini)"
+  },
+  "useAIDesc": {
+    "message": "Deep document analysis with AI"
+  },
+  "autoFill": {
+    "message": "Autofill"
+  },
+  "autoFillDesc": {
+    "message": "Suggest filling forms from profile"
+  },
+  "riskLevel": {
+    "message": "Risk level"
+  },
+  "riskAll": {
+    "message": "All"
+  },
+  "riskHigh": {
+    "message": "High+"
+  },
+  "riskCritical": {
+    "message": "Critical only"
+  },
+  "smartCookieBlock": {
+    "message": "Smart cookie blocking"
+  },
+  "smartCookieBlockDesc": {
+    "message": "Classify and block by category"
+  },
+  "catNecessary": {
+    "message": "Necessary"
+  },
+  "catNecessaryDesc": {
+    "message": "Auth, cart, security"
+  },
+  "catFunctional": {
+    "message": "Functional"
+  },
+  "catFunctionalDesc": {
+    "message": "Language, theme, UI settings"
+  },
+  "catAnalytics": {
+    "message": "Analytics"
+  },
+  "catAnalyticsDesc": {
+    "message": "Google Analytics, Yandex Metrika, etc."
+  },
+  "catAdvertising": {
+    "message": "Advertising"
+  },
+  "catAdvertisingDesc": {
+    "message": "Targeting, retargeting, ad networks"
+  },
+  "catAllowed": {
+    "message": "Allowed"
+  },
+  "antiTracker": {
+    "message": "Anti-tracker"
+  },
+  "antiTrackerDesc": {
+    "message": "Block tracking scripts"
+  },
+  "socialBlock": {
+    "message": "Social media blocking"
+  },
+  "socialBlockDesc": {
+    "message": "Block tracking through social media widgets"
+  },
+  "notifications": {
+    "message": "Notifications"
+  },
+  "notificationsDesc": {
+    "message": "Notify about detected risks"
+  },
+  "showBadge": {
+    "message": "Show badge"
+  },
+  "showBadgeDesc": {
+    "message": "Floating shield button on pages"
+  },
+  "whitelistBuiltIn": {
+    "message": "Built-in: Google, Bing, Yandex, DuckDuckGo, Yahoo, YouTube"
+  },
+  "whitelistAdd": {
+    "message": "Add"
+  },
+  "historyClear": {
+    "message": "Clear history"
+  },
+  "historyEmpty": {
+    "message": "No data yet"
+  },
+  "saved": {
+    "message": "Saved"
+  },
+  "findings": {
+    "message": "findings"
+  },
+  "panelTitle": {
+    "message": "Risk analysis"
+  },
+  "scanning": {
+    "message": "Scanning..."
+  },
+  "noRisks": {
+    "message": "No risks found"
+  },
+  "rateLimitMsg": {
+    "message": "API rate limit reached. Wait a minute."
+  },
+  "socialBlocked": {
+    "message": "social widgets blocked"
+  },
+  "errorTrackBlock": {
+    "message": "Error tracker blocking"
+  },
+  "errorTrackBlockDesc": {
+    "message": "Sentry, Bugsnag, Rollbar, LogRocket, TrackJS, Raygun etc."
+  },
+  "btnAutoFill": {
+    "message": "Autofill"
+  },
+  "safeBrowsing": {
+    "message": "Safe Browsing API check"
+  },
+  "safeBrowsingDesc": {
+    "message": "Check every site via Google Safe Browsing API"
+  },
+  "safeBrowsingKey": {
+    "message": "Safe Browsing API key"
+  },
+  "safeBrowsingKeyHint": {
+    "message": "Create key:"
+  },
+  "safeBrowsingKeyHint2": {
+    "message": "Enable 'Safe Browsing API' in Google Cloud Console - APIs & Services - Library"
+  },
+  "sevCritical": {
+    "message": "CRITICAL"
+  },
+  "sevHigh": {
+    "message": "HIGH"
+  },
+  "sevMedium": {
+    "message": "MEDIUM"
+  },
+  "sevLow": {
+    "message": "LOW"
+  },
+  "readOriginal": {
+    "message": "Read original →"
+  },
+  "scoreLow": {
+    "message": "Low risk"
+  },
+  "scoreMedium": {
+    "message": "Medium risk"
+  },
+  "scoreHigh": {
+    "message": "High risk"
+  },
+  "rateLimitPanel": {
+    "message": "API limit reached - AI analysis temporarily unavailable. Wait a minute."
+  },
+  "cookieBannerDone": {
+    "message": "Cookie banner handled"
+  },
+  "trackersCount": {
+    "message": "Trackers"
+  },
+  "aiAnalysis": {
+    "message": "AI Analysis"
+  },
+  "noDocsFound": {
+    "message": "No EULA/ToS/Privacy Policy documents found."
+  },
+  "aiRisks": {
+    "message": "AI Risks"
+  },
+  "patterns": {
+    "message": "Patterns"
+  },
+  "noRisksFound": {
+    "message": "No obvious risks found"
+  },
+  "checkboxes": {
+    "message": "Checkboxes"
+  },
+  "btnSafeAutofill": {
+    "message": "Safe Autofill"
+  },
+  "btnAutoCookie": {
+    "message": "Auto-block cookies"
+  },
+  "finalClick": {
+    "message": "The final click is yours!"
+  },
+  "filledCount": {
+    "message": "Filled"
+  },
+  "noData": {
+    "message": "No data"
+  },
+  "processed": {
+    "message": "Processed"
+  },
+  "kChars": {
+    "message": "K characters"
+  },
+  "sectionSecurity": {
+    "message": "Site Security"
+  },
+  "virusTotal": {
+    "message": "VirusTotal"
+  },
+  "virusTotalDesc": {
+    "message": "URL check by 70+ antivirus engines (free API key)"
+  },
+  "virusTotalKey": {
+    "message": "VirusTotal API key"
+  },
+  "virusTotalKeyHint": {
+    "message": "Free key:"
+  },
+  "phishTank": {
+    "message": "PhishTank"
+  },
+  "phishTankDesc": {
+    "message": "Check against phishing database (free, no key needed)"
+  },
+  "urlHaus": {
+    "message": "URLhaus (abuse.ch)"
+  },
+  "urlHausDesc": {
+    "message": "Check against malware URL database (free, no key needed)"
+  },
+  "domainAge": {
+    "message": "Domain age analysis (WHOIS)"
+  },
+  "domainAgeDesc": {
+    "message": "Warn about freshly created domains (< 30 days)"
+  },
+  "formSecurity": {
+    "message": "Form security check"
+  },
+  "formSecurityDesc": {
+    "message": "Block if login form sends data to a different domain"
+  },
+  "cryptoMiner": {
+    "message": "Cryptominer scanning"
+  },
+  "cryptoMinerDesc": {
+    "message": "Detect and block hidden miners (Coinhive etc.)"
+  },
+  "detectHiddenIframes": {
+    "message": "Hidden iframes"
+  },
+  "detectHiddenIframesDesc": {
+    "message": "Detect and remove invisible iframes (clickjacking, malware)"
+  },
+  "detectObfuscatedJS": {
+    "message": "Obfuscated JS"
+  },
+  "detectObfuscatedJSDesc": {
+    "message": "Heuristic for encoded scripts (eval/atob, fromCharCode)"
+  },
+  "detectRedirects": {
+    "message": "Redirect chains"
+  },
+  "detectRedirectsDesc": {
+    "message": "Warning on suspicious redirects through different domains"
+  },
+  "detectExtInstall": {
+    "message": "Extension installs"
+  },
+  "detectExtInstallDesc": {
+    "message": "Detect attempts to provoke browser extension installation"
+  },
+  "tabReport": {
+    "message": "Report"
+  },
+  "reportDesc": {
+    "message": "Take a screenshot and send a bug report"
+  },
+  "reportPlaceholder": {
+    "message": "Describe the problem..."
+  },
+  "reportScreenshot": {
+    "message": "Screenshot"
+  },
+  "reportSend": {
+    "message": "Send report"
+  },
+  "reportSent": {
+    "message": "Report sent. Thank you!"
+  },
+  "reportError": {
+    "message": "Failed to send"
+  }
+}

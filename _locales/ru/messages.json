@@ -1,0 +1,407 @@
+{
+  "extName": {
+    "message": "MiniShield"
+  },
+  "extDescription": {
+    "message": "Мультитул без рекламы. Анализ EULA/ToS/Privacy Policy и безопасное автозаполнение"
+  },
+  "popupTitle": {
+    "message": "MiniShield"
+  },
+  "popupSlogan": {
+    "message": "Мультитул без рекламы"
+  },
+  "btnScan": {
+    "message": "Проверить сайт"
+  },
+  "btnCookies": {
+    "message": "Заблокировать cookie"
+  },
+  "btnSettings": {
+    "message": "Все настройки"
+  },
+  "toggleAutoScan": {
+    "message": "Автосканирование"
+  },
+  "toggleAI": {
+    "message": "ИИ-анализ (Gemini)"
+  },
+  "toggleAutoFill": {
+    "message": "Автозаполнение"
+  },
+  "settingsTitle": {
+    "message": "Настройки"
+  },
+  "sectionProfile": {
+    "message": "Профиль для автозаполнения"
+  },
+  "sectionAPI": {
+    "message": "Gemini API"
+  },
+  "sectionAnalysis": {
+    "message": "Анализ"
+  },
+  "sectionCookiePolicy": {
+    "message": "Cookie-политика"
+  },
+  "sectionProtection": {
+    "message": "Защита"
+  },
+  "sectionInterface": {
+    "message": "Интерфейс"
+  },
+  "sectionWhitelist": {
+    "message": "Белый список"
+  },
+  "sectionHistory": {
+    "message": "История анализов"
+  },
+  "firstName": {
+    "message": "Имя"
+  },
+  "lastName": {
+    "message": "Фамилия"
+  },
+  "email": {
+    "message": "Email"
+  },
+  "phone": {
+    "message": "Телефон"
+  },
+  "username": {
+    "message": "Логин"
+  },
+  "birthDate": {
+    "message": "Дата рождения"
+  },
+  "organization": {
+    "message": "Организация"
+  },
+  "address": {
+    "message": "Адрес"
+  },
+  "country": {
+    "message": "Страна"
+  },
+  "city": {
+    "message": "Город"
+  },
+  "apiKey": {
+    "message": "API-ключ"
+  },
+  "apiKeyHint": {
+    "message": "Получить:"
+  },
+  "autoScan": {
+    "message": "Автосканирование"
+  },
+  "autoScanDesc": {
+    "message": "Анализировать при открытии страницы"
+  },
+  "autoScanAll": {
+    "message": "Автоскан всех сайтов"
+  },
+  "autoScanAllDesc": {
+    "message": "Требует разрешение на все сайты"
+  },
+  "useAI": {
+    "message": "ИИ-анализ (Gemini)"
+  },
+  "useAIDesc": {
+    "message": "Глубокий анализ документов нейросетью"
+  },
+  "autoFill": {
+    "message": "Автозаполнение"
+  },
+  "autoFillDesc": {
+    "message": "Предлагать заполнить формы из профиля"
+  },
+  "riskLevel": {
+    "message": "Уровень рисков"
+  },
+  "riskAll": {
+    "message": "Все"
+  },
+  "riskHigh": {
+    "message": "Высокие+"
+  },
+  "riskCritical": {
+    "message": "Только критические"
+  },
+  "smartCookieBlock": {
+    "message": "Умная блокировка cookie"
+  },
+  "smartCookieBlockDesc": {
+    "message": "Классификация и блокировка по категориям"
+  },
+  "catNecessary": {
+    "message": "Необходимые"
+  },
+  "catNecessaryDesc": {
+    "message": "Авторизация, корзина, безопасность"
+  },
+  "catFunctional": {
+    "message": "Функциональные"
+  },
+  "catFunctionalDesc": {
+    "message": "Язык, тема, настройки интерфейса"
+  },
+  "catAnalytics": {
+    "message": "Аналитические"
+  },
+  "catAnalyticsDesc": {
+    "message": "Google Analytics, Yandex Metrika и т.д."
+  },
+  "catAdvertising": {
+    "message": "Рекламные"
+  },
+  "catAdvertisingDesc": {
+    "message": "Таргетинг, ретаргетинг, рекламные сети"
+  },
+  "catAllowed": {
+    "message": "Разрешены"
+  },
+  "antiTracker": {
+    "message": "Антитрекер"
+  },
+  "antiTrackerDesc": {
+    "message": "Блокировка скриптов отслеживания"
+  },
+  "socialBlock": {
+    "message": "Блокировка соцсетей"
+  },
+  "socialBlockDesc": {
+    "message": "Блокировать отслеживание через значки социальных сетей"
+  },
+  "notifications": {
+    "message": "Уведомления"
+  },
+  "notificationsDesc": {
+    "message": "Уведомлять об обнаруженных рисках"
+  },
+  "showBadge": {
+    "message": "Показывать бейдж"
+  },
+  "showBadgeDesc": {
+    "message": "Плавающая кнопка-щит на страницах"
+  },
+  "whitelistBuiltIn": {
+    "message": "Встроенные: Google, Bing, Yandex, DuckDuckGo, Yahoo, YouTube"
+  },
+  "whitelistAdd": {
+    "message": "Добавить"
+  },
+  "historyClear": {
+    "message": "Очистить историю"
+  },
+  "historyEmpty": {
+    "message": "Пока пусто"
+  },
+  "saved": {
+    "message": "Сохранено"
+  },
+  "findings": {
+    "message": "находок"
+  },
+  "panelTitle": {
+    "message": "Анализ рисков"
+  },
+  "scanning": {
+    "message": "Сканирование..."
+  },
+  "noRisks": {
+    "message": "Рисков не обнаружено"
+  },
+  "rateLimitMsg": {
+    "message": "Лимит запросов API исчерпан. Подождите минуту."
+  },
+  "socialBlocked": {
+    "message": "виджетов соцсетей заблокировано"
+  },
+  "errorTrackBlock": {
+    "message": "Блокировка сбора ошибок"
+  },
+  "errorTrackBlockDesc": {
+    "message": "Sentry, Bugsnag, Rollbar, LogRocket, TrackJS, Raygun и др."
+  },
+  "btnAutoFill": {
+    "message": "Автозаполнение"
+  },
+  "safeBrowsing": {
+    "message": "Safe Browsing API проверка"
+  },
+  "safeBrowsingDesc": {
+    "message": "Проверять каждый сайт через Google Safe Browsing API"
+  },
+  "safeBrowsingKey": {
+    "message": "API-ключ Safe Browsing"
+  },
+  "safeBrowsingKeyHint": {
+    "message": "Создать ключ:"
+  },
+  "safeBrowsingKeyHint2": {
+    "message": "Включите 'Safe Browsing API' в Google Cloud Console - APIs & Services - Library"
+  },
+  "sevCritical": {
+    "message": "КРИТИЧЕСКИЙ"
+  },
+  "sevHigh": {
+    "message": "ВЫСОКИЙ"
+  },
+  "sevMedium": {
+    "message": "СРЕДНИЙ"
+  },
+  "sevLow": {
+    "message": "НИЗКИЙ"
+  },
+  "readOriginal": {
+    "message": "Читать в оригинале →"
+  },
+  "scoreLow": {
+    "message": "Низкий риск"
+  },
+  "scoreMedium": {
+    "message": "Средний риск"
+  },
+  "scoreHigh": {
+    "message": "Высокий риск"
+  },
+  "rateLimitPanel": {
+    "message": "Лимит API исчерпан - ИИ-анализ временно недоступен. Подождите минуту."
+  },
+  "cookieBannerDone": {
+    "message": "Cookie-баннер обработан"
+  },
+  "trackersCount": {
+    "message": "Трекеров"
+  },
+  "aiAnalysis": {
+    "message": "ИИ-анализ"
+  },
+  "noDocsFound": {
+    "message": "Документы EULA/ToS/Privacy Policy не найдены."
+  },
+  "aiRisks": {
+    "message": "Риски по ИИ"
+  },
+  "patterns": {
+    "message": "Паттерны"
+  },
+  "noRisksFound": {
+    "message": "Явных рисков не обнаружено"
+  },
+  "checkboxes": {
+    "message": "Чекбоксы"
+  },
+  "btnSafeAutofill": {
+    "message": "Безопасное автозаполнение"
+  },
+  "btnAutoCookie": {
+    "message": "Авто-запрет cookie"
+  },
+  "finalClick": {
+    "message": "Финальный клик - за вами!"
+  },
+  "filledCount": {
+    "message": "Заполнено"
+  },
+  "noData": {
+    "message": "Нет данных"
+  },
+  "processed": {
+    "message": "Обработано"
+  },
+  "kChars": {
+    "message": "K символов"
+  },
+  "sectionSecurity": {
+    "message": "Безопасность сайтов"
+  },
+  "virusTotal": {
+    "message": "VirusTotal"
+  },
+  "virusTotalDesc": {
+    "message": "Проверка URL 70+ антивирусами (бесплатный ключ)"
+  },
+  "virusTotalKey": {
+    "message": "API-ключ VirusTotal"
+  },
+  "virusTotalKeyHint": {
+    "message": "Бесплатный ключ:"
+  },
+  "phishTank": {
+    "message": "PhishTank"
+  },
+  "phishTankDesc": {
+    "message": "Проверка по базе фишинговых сайтов (бесплатно, без ключа)"
+  },
+  "urlHaus": {
+    "message": "URLhaus (abuse.ch)"
+  },
+  "urlHausDesc": {
+    "message": "Проверка по базе вредоносных URL (бесплатно, без ключа)"
+  },
+  "domainAge": {
+    "message": "Анализ возраста домена (WHOIS)"
+  },
+  "domainAgeDesc": {
+    "message": "Предупреждать о свежесозданных доменах (< 30 дней)"
+  },
+  "formSecurity": {
+    "message": "Проверка форм на безопасность"
+  },
+  "formSecurityDesc": {
+    "message": "Блокировать если форма логина отправляет данные на чужой домен"
+  },
+  "cryptoMiner": {
+    "message": "Сканирование на криптомайнеры"
+  },
+  "cryptoMinerDesc": {
+    "message": "Обнаружение и блокировка скрытых майнеров (Coinhive и др.)"
+  },
+  "detectHiddenIframes": {
+    "message": "Скрытые iframe"
+  },
+  "detectHiddenIframesDesc": {
+    "message": "Детект и удаление невидимых iframe (clickjacking, малварь)"
+  },
+  "detectObfuscatedJS": {
+    "message": "Obfuscated JS"
+  },
+  "detectObfuscatedJSDesc": {
+    "message": "Эвристика на закодированные скрипты (eval/atob, fromCharCode)"
+  },
+  "detectRedirects": {
+    "message": "Цепочки редиректов"
+  },
+  "detectRedirectsDesc": {
+    "message": "Предупреждение при подозрительных редиректах через разные домены"
+  },
+  "detectExtInstall": {
+    "message": "Установка расширений"
+  },
+  "detectExtInstallDesc": {
+    "message": "Детект попыток спровоцировать установку расширений браузера"
+  },
+  "tabReport": {
+    "message": "Отчет"
+  },
+  "reportDesc": {
+    "message": "Сделайте скриншот и отправьте отчет об ошибке"
+  },
+  "reportPlaceholder": {
+    "message": "Опишите проблему..."
+  },
+  "reportScreenshot": {
+    "message": "Скриншот"
+  },
+  "reportSend": {
+    "message": "Отправить"
+  },
+  "reportSent": {
+    "message": "Отчет отправлен. Спасибо!"
+  },
+  "reportError": {
+    "message": "Ошибка отправки"
+  }
+}

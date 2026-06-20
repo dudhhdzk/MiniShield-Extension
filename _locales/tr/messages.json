@@ -1,0 +1,407 @@
+{
+  "extName": {
+    "message": "MiniShield"
+  },
+  "extDescription": {
+    "message": "Reklamasız çok amaçlı araç. EULA/ToS/Gizlilik Politikası analizi ve güvenli otomatik doldurma"
+  },
+  "popupTitle": {
+    "message": "MiniShield"
+  },
+  "popupSlogan": {
+    "message": "Reklamasız çok amaçlı araç"
+  },
+  "btnScan": {
+    "message": "Siteyi tara"
+  },
+  "btnCookies": {
+    "message": "Çerezleri engelle"
+  },
+  "btnSettings": {
+    "message": "Tüm ayarlar"
+  },
+  "toggleAutoScan": {
+    "message": "Otomatik tarama"
+  },
+  "toggleAI": {
+    "message": "Yapay zeka analizi (Gemini)"
+  },
+  "toggleAutoFill": {
+    "message": "Otomatik doldurma"
+  },
+  "settingsTitle": {
+    "message": "Ayarlar"
+  },
+  "sectionProfile": {
+    "message": "Otomatik doldurma profili"
+  },
+  "sectionAPI": {
+    "message": "Gemini API"
+  },
+  "sectionAnalysis": {
+    "message": "Analiz"
+  },
+  "sectionCookiePolicy": {
+    "message": "Çerez politikası"
+  },
+  "sectionProtection": {
+    "message": "Koruma"
+  },
+  "sectionInterface": {
+    "message": "Arayüz"
+  },
+  "sectionWhitelist": {
+    "message": "Beyaz liste"
+  },
+  "sectionHistory": {
+    "message": "Analiz geçmişi"
+  },
+  "firstName": {
+    "message": "Ad"
+  },
+  "lastName": {
+    "message": "Soyad"
+  },
+  "email": {
+    "message": "E-posta"
+  },
+  "phone": {
+    "message": "Telefon"
+  },
+  "username": {
+    "message": "Kullanıcı adı"
+  },
+  "birthDate": {
+    "message": "Doğum tarihi"
+  },
+  "organization": {
+    "message": "Kuruluş"
+  },
+  "address": {
+    "message": "Adres"
+  },
+  "country": {
+    "message": "Ülke"
+  },
+  "city": {
+    "message": "Şehir"
+  },
+  "apiKey": {
+    "message": "API anahtarı"
+  },
+  "apiKeyHint": {
+    "message": "Al:"
+  },
+  "autoScan": {
+    "message": "Otomatik tarama"
+  },
+  "autoScanDesc": {
+    "message": "Sayfa açılınca analiz et"
+  },
+  "autoScanAll": {
+    "message": "Tüm siteleri tara"
+  },
+  "autoScanAllDesc": {
+    "message": "Tüm siteler için izin gerekli"
+  },
+  "useAI": {
+    "message": "Yapay zeka analizi (Gemini)"
+  },
+  "useAIDesc": {
+    "message": "Yapay zeka ile derin analiz"
+  },
+  "autoFill": {
+    "message": "Otomatik doldurma"
+  },
+  "autoFillDesc": {
+    "message": "Profilden form doldurmayı öner"
+  },
+  "riskLevel": {
+    "message": "Risk seviyesi"
+  },
+  "riskAll": {
+    "message": "Tümü"
+  },
+  "riskHigh": {
+    "message": "Yüksek+"
+  },
+  "riskCritical": {
+    "message": "Yalnızca kritik"
+  },
+  "smartCookieBlock": {
+    "message": "Akıllı çerez engelleme"
+  },
+  "smartCookieBlockDesc": {
+    "message": "Kategoriye göre sınıflandırma ve engelleme"
+  },
+  "catNecessary": {
+    "message": "Gerekli"
+  },
+  "catNecessaryDesc": {
+    "message": "Kimlik doğrulama, sepet, güvenlik"
+  },
+  "catFunctional": {
+    "message": "İşlevsel"
+  },
+  "catFunctionalDesc": {
+    "message": "Dil, tema, arayüz ayarları"
+  },
+  "catAnalytics": {
+    "message": "Analitik"
+  },
+  "catAnalyticsDesc": {
+    "message": "Google Analytics, Yandex Metrika vb."
+  },
+  "catAdvertising": {
+    "message": "Reklam"
+  },
+  "catAdvertisingDesc": {
+    "message": "Hedefleme, yeniden hedefleme, reklam ağları"
+  },
+  "catAllowed": {
+    "message": "İzin verildi"
+  },
+  "antiTracker": {
+    "message": "Takip karşıtı"
+  },
+  "antiTrackerDesc": {
+    "message": "Takip scriptlerini engelle"
+  },
+  "socialBlock": {
+    "message": "Sosyal medya engelleme"
+  },
+  "socialBlockDesc": {
+    "message": "Sosyal widget'lar aracılığıyla takibi engelle"
+  },
+  "notifications": {
+    "message": "Bildirimler"
+  },
+  "notificationsDesc": {
+    "message": "Tespit edilen riskler hakkında bildir"
+  },
+  "showBadge": {
+    "message": "Rozet göster"
+  },
+  "showBadgeDesc": {
+    "message": "Sayfalarda yüzen kalkan düğmesi"
+  },
+  "whitelistBuiltIn": {
+    "message": "Dahili: Google, Bing, Yandex, DuckDuckGo, Yahoo, YouTube"
+  },
+  "whitelistAdd": {
+    "message": "Ekle"
+  },
+  "historyClear": {
+    "message": "Geçmişi temizle"
+  },
+  "historyEmpty": {
+    "message": "Henüz veri yok"
+  },
+  "saved": {
+    "message": "Kaydedildi"
+  },
+  "findings": {
+    "message": "bulgu"
+  },
+  "panelTitle": {
+    "message": "Risk analizi"
+  },
+  "scanning": {
+    "message": "Taranıyor..."
+  },
+  "noRisks": {
+    "message": "Risk bulunamadı"
+  },
+  "rateLimitMsg": {
+    "message": "API hız sınırına ulaşıldı. Lütfen bekleyin."
+  },
+  "socialBlocked": {
+    "message": "sosyal widget engellendi"
+  },
+  "errorTrackBlock": {
+    "message": "Hata izleyici engelleme"
+  },
+  "errorTrackBlockDesc": {
+    "message": "Sentry, Bugsnag, Rollbar, LogRocket, TrackJS, Raygun vb."
+  },
+  "btnAutoFill": {
+    "message": "Otomatik doldur"
+  },
+  "safeBrowsing": {
+    "message": "Safe Browsing API kontrolü"
+  },
+  "safeBrowsingDesc": {
+    "message": "Her siteyi Google Safe Browsing API ile kontrol et"
+  },
+  "safeBrowsingKey": {
+    "message": "Safe Browsing API anahtarı"
+  },
+  "safeBrowsingKeyHint": {
+    "message": "Anahtar oluştur:"
+  },
+  "safeBrowsingKeyHint2": {
+    "message": "Google Cloud Console'da 'Safe Browsing API'yi etkinleştirin"
+  },
+  "sevCritical": {
+    "message": "KRİTİK"
+  },
+  "sevHigh": {
+    "message": "YÜKSEK"
+  },
+  "sevMedium": {
+    "message": "ORTA"
+  },
+  "sevLow": {
+    "message": "DÜŞÜK"
+  },
+  "readOriginal": {
+    "message": "Orijinali oku →"
+  },
+  "scoreLow": {
+    "message": "Düşük risk"
+  },
+  "scoreMedium": {
+    "message": "Orta risk"
+  },
+  "scoreHigh": {
+    "message": "Yüksek risk"
+  },
+  "rateLimitPanel": {
+    "message": "API limiti aşıldı - AI analizi geçici olarak kullanılamıyor."
+  },
+  "cookieBannerDone": {
+    "message": "Çerez banner'ı işlendi"
+  },
+  "trackersCount": {
+    "message": "İzleyiciler"
+  },
+  "aiAnalysis": {
+    "message": "AI Analizi"
+  },
+  "noDocsFound": {
+    "message": "EULA/ToS/Gizlilik Politikası belgeleri bulunamadı."
+  },
+  "aiRisks": {
+    "message": "AI Riskleri"
+  },
+  "patterns": {
+    "message": "Desenler"
+  },
+  "noRisksFound": {
+    "message": "Belirgin risk bulunamadı"
+  },
+  "checkboxes": {
+    "message": "Onay kutuları"
+  },
+  "btnSafeAutofill": {
+    "message": "Güvenli otomatik doldurma"
+  },
+  "btnAutoCookie": {
+    "message": "Çerezleri otomatik engelle"
+  },
+  "finalClick": {
+    "message": "Son tıklama sizin!"
+  },
+  "filledCount": {
+    "message": "Dolduruldu"
+  },
+  "noData": {
+    "message": "Veri yok"
+  },
+  "processed": {
+    "message": "İşlendi"
+  },
+  "kChars": {
+    "message": "K karakter"
+  },
+  "sectionSecurity": {
+    "message": "Site Güvenliği"
+  },
+  "virusTotal": {
+    "message": "VirusTotal"
+  },
+  "virusTotalDesc": {
+    "message": "70+ antivirüsle URL kontrolü (ücretsiz anahtar)"
+  },
+  "virusTotalKey": {
+    "message": "VirusTotal API anahtarı"
+  },
+  "virusTotalKeyHint": {
+    "message": "Ücretsiz anahtar:"
+  },
+  "phishTank": {
+    "message": "PhishTank"
+  },
+  "phishTankDesc": {
+    "message": "Kimlik avı veritabanı kontrolü (ücretsiz, anahtar gereksiz)"
+  },
+  "urlHaus": {
+    "message": "URLhaus (abuse.ch)"
+  },
+  "urlHausDesc": {
+    "message": "Zararlı URL veritabanı kontrolü (ücretsiz, anahtar gereksiz)"
+  },
+  "domainAge": {
+    "message": "Alan adi yasi analizi (WHOIS)"
+  },
+  "domainAgeDesc": {
+    "message": "Yeni olusturulan alan adlari hakkinda uyar (< 30 gun)"
+  },
+  "formSecurity": {
+    "message": "Form guvenlik kontrolu"
+  },
+  "formSecurityDesc": {
+    "message": "Giris formu verileri baska bir alana gonderiyorsa engelle"
+  },
+  "cryptoMiner": {
+    "message": "Kripto madenci taramasi"
+  },
+  "cryptoMinerDesc": {
+    "message": "Gizli madencileri tespit et ve engelle (Coinhive vb.)"
+  },
+  "detectHiddenIframes": {
+    "message": "Gizli iframe'ler"
+  },
+  "detectHiddenIframesDesc": {
+    "message": "Gorunmez iframe'leri tespit et ve kaldir (clickjacking, malware)"
+  },
+  "detectObfuscatedJS": {
+    "message": "Karmasik JS"
+  },
+  "detectObfuscatedJSDesc": {
+    "message": "Kodlanmis betikler icin sezgisel analiz (eval/atob)"
+  },
+  "detectRedirects": {
+    "message": "Yonlendirme zincirleri"
+  },
+  "detectRedirectsDesc": {
+    "message": "Farkli alan adlari uzerinden supheli yonlendirme uyarisi"
+  },
+  "detectExtInstall": {
+    "message": "Uzanti yuklemesi"
+  },
+  "detectExtInstallDesc": {
+    "message": "Tarayici uzantisi yuklemeye tesvik girisimlerini tespit et"
+  },
+  "tabReport": {
+    "message": "Bildir"
+  },
+  "reportDesc": {
+    "message": "Ekran goruntusu alin ve hata raporu gonderin"
+  },
+  "reportPlaceholder": {
+    "message": "Sorunu tanimlayin..."
+  },
+  "reportScreenshot": {
+    "message": "Goruntu"
+  },
+  "reportSend": {
+    "message": "Gonder"
+  },
+  "reportSent": {
+    "message": "Rapor gonderildi. Tesekkurler!"
+  },
+  "reportError": {
+    "message": "Gonderilemedi"
+  }
+}

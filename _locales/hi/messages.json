@@ -1,0 +1,407 @@
+{
+  "extName": {
+    "message": "MiniShield"
+  },
+  "extDescription": {
+    "message": "विज्ञापन-मुक्त मल्टी-टूल। EULA/ToS/गोपनीयता नीति विश्लेषण और सुरक्षित ऑटोफिल"
+  },
+  "popupTitle": {
+    "message": "MiniShield"
+  },
+  "popupSlogan": {
+    "message": "विज्ञापन-मुक्त मल्टी-टूल"
+  },
+  "btnScan": {
+    "message": "साइट स्कैन करें"
+  },
+  "btnCookies": {
+    "message": "कुकीज़ ब्लॉक करें"
+  },
+  "btnSettings": {
+    "message": "सभी सेटिंग्स"
+  },
+  "toggleAutoScan": {
+    "message": "ऑटो स्कैन"
+  },
+  "toggleAI": {
+    "message": "AI विश्लेषण (Gemini)"
+  },
+  "toggleAutoFill": {
+    "message": "ऑटोफिल"
+  },
+  "settingsTitle": {
+    "message": "सेटिंग्स"
+  },
+  "sectionProfile": {
+    "message": "ऑटोफिल प्रोफ़ाइल"
+  },
+  "sectionAPI": {
+    "message": "Gemini API"
+  },
+  "sectionAnalysis": {
+    "message": "विश्लेषण"
+  },
+  "sectionCookiePolicy": {
+    "message": "कुकी नीति"
+  },
+  "sectionProtection": {
+    "message": "सुरक्षा"
+  },
+  "sectionInterface": {
+    "message": "इंटरफ़ेस"
+  },
+  "sectionWhitelist": {
+    "message": "श्वेत सूची"
+  },
+  "sectionHistory": {
+    "message": "विश्लेषण इतिहास"
+  },
+  "firstName": {
+    "message": "पहला नाम"
+  },
+  "lastName": {
+    "message": "उपनाम"
+  },
+  "email": {
+    "message": "ईमेल"
+  },
+  "phone": {
+    "message": "फ़ोन"
+  },
+  "username": {
+    "message": "उपयोगकर्ता नाम"
+  },
+  "birthDate": {
+    "message": "जन्म तिथि"
+  },
+  "organization": {
+    "message": "संगठन"
+  },
+  "address": {
+    "message": "पता"
+  },
+  "country": {
+    "message": "देश"
+  },
+  "city": {
+    "message": "शहर"
+  },
+  "apiKey": {
+    "message": "API कुंजी"
+  },
+  "apiKeyHint": {
+    "message": "प्राप्त करें:"
+  },
+  "autoScan": {
+    "message": "ऑटो स्कैन"
+  },
+  "autoScanDesc": {
+    "message": "पेज खोलते समय विश्लेषण करें"
+  },
+  "autoScanAll": {
+    "message": "सभी साइट स्कैन करें"
+  },
+  "autoScanAllDesc": {
+    "message": "सभी साइटों की अनुमति आवश्यक"
+  },
+  "useAI": {
+    "message": "AI विश्लेषण (Gemini)"
+  },
+  "useAIDesc": {
+    "message": "AI द्वारा गहन विश्लेषण"
+  },
+  "autoFill": {
+    "message": "ऑटोफिल"
+  },
+  "autoFillDesc": {
+    "message": "प्रोफ़ाइल से फ़ॉर्म भरने का सुझाव दें"
+  },
+  "riskLevel": {
+    "message": "जोखिम स्तर"
+  },
+  "riskAll": {
+    "message": "सभी"
+  },
+  "riskHigh": {
+    "message": "उच्च+"
+  },
+  "riskCritical": {
+    "message": "केवल गंभीर"
+  },
+  "smartCookieBlock": {
+    "message": "स्मार्ट कुकी ब्लॉकिंग"
+  },
+  "smartCookieBlockDesc": {
+    "message": "श्रेणी के अनुसार वर्गीकरण और ब्लॉकिंग"
+  },
+  "catNecessary": {
+    "message": "आवश्यक"
+  },
+  "catNecessaryDesc": {
+    "message": "प्रमाणीकरण, कार्ट, सुरक्षा"
+  },
+  "catFunctional": {
+    "message": "कार्यात्मक"
+  },
+  "catFunctionalDesc": {
+    "message": "भाषा, थीम, UI सेटिंग्स"
+  },
+  "catAnalytics": {
+    "message": "विश्लेषणात्मक"
+  },
+  "catAnalyticsDesc": {
+    "message": "Google Analytics, Yandex Metrika आदि"
+  },
+  "catAdvertising": {
+    "message": "विज्ञापन"
+  },
+  "catAdvertisingDesc": {
+    "message": "लक्ष्यीकरण, पुनः लक्ष्यीकरण, विज्ञापन नेटवर्क"
+  },
+  "catAllowed": {
+    "message": "अनुमत"
+  },
+  "antiTracker": {
+    "message": "एंटी-ट्रैकर"
+  },
+  "antiTrackerDesc": {
+    "message": "ट्रैकिंग स्क्रिप्ट ब्लॉक करें"
+  },
+  "socialBlock": {
+    "message": "सोशल मीडिया ब्लॉकिंग"
+  },
+  "socialBlockDesc": {
+    "message": "सोशल विजेट्स के माध्यम से ट्रैकिंग ब्लॉक करें"
+  },
+  "notifications": {
+    "message": "सूचनाएं"
+  },
+  "notificationsDesc": {
+    "message": "पाए गए जोखिमों के बारे में सूचित करें"
+  },
+  "showBadge": {
+    "message": "बैज दिखाएं"
+  },
+  "showBadgeDesc": {
+    "message": "पृष्ठों पर फ्लोटिंग शील्ड बटन"
+  },
+  "whitelistBuiltIn": {
+    "message": "अंतर्निहित: Google, Bing, Yandex, DuckDuckGo, Yahoo, YouTube"
+  },
+  "whitelistAdd": {
+    "message": "जोड़ें"
+  },
+  "historyClear": {
+    "message": "इतिहास मिटाएं"
+  },
+  "historyEmpty": {
+    "message": "अभी तक कोई डेटा नहीं"
+  },
+  "saved": {
+    "message": "सहेजा गया"
+  },
+  "findings": {
+    "message": "निष्कर्ष"
+  },
+  "panelTitle": {
+    "message": "जोखिम विश्लेषण"
+  },
+  "scanning": {
+    "message": "स्कैन हो रहा है..."
+  },
+  "noRisks": {
+    "message": "कोई जोखिम नहीं मिला"
+  },
+  "rateLimitMsg": {
+    "message": "API दर सीमा पहुंच गई। कृपया प्रतीक्षा करें।"
+  },
+  "socialBlocked": {
+    "message": "सोशल विजेट ब्लॉक किए गए"
+  },
+  "errorTrackBlock": {
+    "message": "त्रुटि ट्रैकर अवरोधन"
+  },
+  "errorTrackBlockDesc": {
+    "message": "Sentry, Bugsnag, Rollbar, LogRocket, TrackJS, Raygun आदि"
+  },
+  "btnAutoFill": {
+    "message": "ऑटोफिल"
+  },
+  "safeBrowsing": {
+    "message": "Safe Browsing API जाँच"
+  },
+  "safeBrowsingDesc": {
+    "message": "Google Safe Browsing API से हर साइट की जाँच करें"
+  },
+  "safeBrowsingKey": {
+    "message": "Safe Browsing API कुंजी"
+  },
+  "safeBrowsingKeyHint": {
+    "message": "कुंजी बनाएं:"
+  },
+  "safeBrowsingKeyHint2": {
+    "message": "Google Cloud Console में 'Safe Browsing API' सक्षम करें"
+  },
+  "sevCritical": {
+    "message": "गंभीर"
+  },
+  "sevHigh": {
+    "message": "उच्च"
+  },
+  "sevMedium": {
+    "message": "मध्यम"
+  },
+  "sevLow": {
+    "message": "कम"
+  },
+  "readOriginal": {
+    "message": "मूल पढ़ें →"
+  },
+  "scoreLow": {
+    "message": "कम जोखिम"
+  },
+  "scoreMedium": {
+    "message": "मध्यम जोखिम"
+  },
+  "scoreHigh": {
+    "message": "उच्च जोखिम"
+  },
+  "rateLimitPanel": {
+    "message": "API सीमा पहुंची - AI विश्लेषण अस्थायी रूप से अनुपलब्ध।"
+  },
+  "cookieBannerDone": {
+    "message": "कुकी बैनर संसाधित"
+  },
+  "trackersCount": {
+    "message": "ट्रैकर"
+  },
+  "aiAnalysis": {
+    "message": "AI विश्लेषण"
+  },
+  "noDocsFound": {
+    "message": "कोई EULA/ToS/गोपनीयता नीति दस्तावेज़ नहीं मिला।"
+  },
+  "aiRisks": {
+    "message": "AI जोखिम"
+  },
+  "patterns": {
+    "message": "पैटर्न"
+  },
+  "noRisksFound": {
+    "message": "कोई स्पष्ट जोखिम नहीं मिला"
+  },
+  "checkboxes": {
+    "message": "चेकबॉक्स"
+  },
+  "btnSafeAutofill": {
+    "message": "सुरक्षित ऑटोफिल"
+  },
+  "btnAutoCookie": {
+    "message": "कुकी ऑटो-ब्लॉक"
+  },
+  "finalClick": {
+    "message": "अंतिम क्लिक आपका है!"
+  },
+  "filledCount": {
+    "message": "भरा गया"
+  },
+  "noData": {
+    "message": "कोई डेटा नहीं"
+  },
+  "processed": {
+    "message": "संसाधित"
+  },
+  "kChars": {
+    "message": "K अक्षर"
+  },
+  "sectionSecurity": {
+    "message": "साइट सुरक्षा"
+  },
+  "virusTotal": {
+    "message": "VirusTotal"
+  },
+  "virusTotalDesc": {
+    "message": "70+ एंटीवायरस से URL जांच (मुफ्त कुंजी)"
+  },
+  "virusTotalKey": {
+    "message": "VirusTotal API कुंजी"
+  },
+  "virusTotalKeyHint": {
+    "message": "मुफ्त कुंजी:"
+  },
+  "phishTank": {
+    "message": "PhishTank"
+  },
+  "phishTankDesc": {
+    "message": "फिशिंग डेटाबेस में जांच (मुफ्त, कुंजी नहीं चाहिए)"
+  },
+  "urlHaus": {
+    "message": "URLhaus (abuse.ch)"
+  },
+  "urlHausDesc": {
+    "message": "दुर्भावनापूर्ण URL डेटाबेस में जांच (मुफ्त, कुंजी नहीं चाहिए)"
+  },
+  "domainAge": {
+    "message": "डोमेन आयु विश्लेषण (WHOIS)"
+  },
+  "domainAgeDesc": {
+    "message": "नए बनाए गए डोमेन के बारे में चेतावनी (< 30 दिन)"
+  },
+  "formSecurity": {
+    "message": "फॉर्म सुरक्षा जांच"
+  },
+  "formSecurityDesc": {
+    "message": "अगर लॉगिन फॉर्म दूसरे डोमेन पर डेटा भेजता है तो ब्लॉक करें"
+  },
+  "cryptoMiner": {
+    "message": "क्रिप्टोमाइनर स्कैनिंग"
+  },
+  "cryptoMinerDesc": {
+    "message": "छिपे हुए माइनर्स का पता लगाना और ब्लॉक करना (Coinhive आदि)"
+  },
+  "detectHiddenIframes": {
+    "message": "छिपे iframe"
+  },
+  "detectHiddenIframesDesc": {
+    "message": "अदृश्य iframe का पता लगाएं और हटाएं (क्लिकजैकिंग, मैलवेयर)"
+  },
+  "detectObfuscatedJS": {
+    "message": "एन्कोडेड JS"
+  },
+  "detectObfuscatedJSDesc": {
+    "message": "एन्कोडेड स्क्रिप्ट के लिए अनुमानी पहचान (eval/atob)"
+  },
+  "detectRedirects": {
+    "message": "रीडायरेक्ट चेन"
+  },
+  "detectRedirectsDesc": {
+    "message": "विभिन्न डोमेन के माध्यम से संदिग्ध रीडायरेक्ट पर चेतावनी"
+  },
+  "detectExtInstall": {
+    "message": "एक्सटेंशन इंस्टॉल"
+  },
+  "detectExtInstallDesc": {
+    "message": "ब्राउज़र एक्सटेंशन इंस्टॉल करने के प्रयासों का पता लगाएं"
+  },
+  "tabReport": {
+    "message": "रिपोर्ट"
+  },
+  "reportDesc": {
+    "message": "स्क्रीनशॉट लें और एरर रिपोर्ट भेजें"
+  },
+  "reportPlaceholder": {
+    "message": "समस्या का वर्णन करें..."
+  },
+  "reportScreenshot": {
+    "message": "स्क्रीनशॉट"
+  },
+  "reportSend": {
+    "message": "भेजें"
+  },
+  "reportSent": {
+    "message": "भेज दिया गया!"
+  },
+  "reportError": {
+    "message": "त्रुटि"
+  }
+}

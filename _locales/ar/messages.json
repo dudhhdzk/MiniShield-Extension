@@ -1,0 +1,407 @@
+{
+  "extName": {
+    "message": "MiniShield"
+  },
+  "extDescription": {
+    "message": "أداة متعددة بدون إعلانات. تحليل EULA/ToS/Privacy Policy والملء التلقائي الآمن"
+  },
+  "popupTitle": {
+    "message": "MiniShield"
+  },
+  "popupSlogan": {
+    "message": "أداة متعددة بدون إعلانات"
+  },
+  "btnScan": {
+    "message": "فحص الموقع"
+  },
+  "btnCookies": {
+    "message": "حظر الكوكيز"
+  },
+  "btnSettings": {
+    "message": "جميع الإعدادات"
+  },
+  "toggleAutoScan": {
+    "message": "فحص تلقائي"
+  },
+  "toggleAI": {
+    "message": "تحليل بالذكاء الاصطناعي (Gemini)"
+  },
+  "toggleAutoFill": {
+    "message": "ملء تلقائي"
+  },
+  "settingsTitle": {
+    "message": "الإعدادات"
+  },
+  "sectionProfile": {
+    "message": "الملف الشخصي للملء التلقائي"
+  },
+  "sectionAPI": {
+    "message": "Gemini API"
+  },
+  "sectionAnalysis": {
+    "message": "التحليل"
+  },
+  "sectionCookiePolicy": {
+    "message": "سياسة الكوكيز"
+  },
+  "sectionProtection": {
+    "message": "الحماية"
+  },
+  "sectionInterface": {
+    "message": "الواجهة"
+  },
+  "sectionWhitelist": {
+    "message": "القائمة البيضاء"
+  },
+  "sectionHistory": {
+    "message": "سجل التحليلات"
+  },
+  "firstName": {
+    "message": "الاسم الأول"
+  },
+  "lastName": {
+    "message": "اسم العائلة"
+  },
+  "email": {
+    "message": "البريد الإلكتروني"
+  },
+  "phone": {
+    "message": "الهاتف"
+  },
+  "username": {
+    "message": "اسم المستخدم"
+  },
+  "birthDate": {
+    "message": "تاريخ الميلاد"
+  },
+  "organization": {
+    "message": "المؤسسة"
+  },
+  "address": {
+    "message": "العنوان"
+  },
+  "country": {
+    "message": "البلد"
+  },
+  "city": {
+    "message": "المدينة"
+  },
+  "apiKey": {
+    "message": "مفتاح API"
+  },
+  "apiKeyHint": {
+    "message": "احصل عليه:"
+  },
+  "autoScan": {
+    "message": "فحص تلقائي"
+  },
+  "autoScanDesc": {
+    "message": "تحليل عند فتح الصفحة"
+  },
+  "autoScanAll": {
+    "message": "فحص جميع المواقع"
+  },
+  "autoScanAllDesc": {
+    "message": "يتطلب إذن لجميع المواقع"
+  },
+  "useAI": {
+    "message": "تحليل بالذكاء الاصطناعي (Gemini)"
+  },
+  "useAIDesc": {
+    "message": "تحليل عميق بالذكاء الاصطناعي"
+  },
+  "autoFill": {
+    "message": "ملء تلقائي"
+  },
+  "autoFillDesc": {
+    "message": "اقتراح ملء النماذج من الملف الشخصي"
+  },
+  "riskLevel": {
+    "message": "مستوى المخاطر"
+  },
+  "riskAll": {
+    "message": "الكل"
+  },
+  "riskHigh": {
+    "message": "عالي+"
+  },
+  "riskCritical": {
+    "message": "حرج فقط"
+  },
+  "smartCookieBlock": {
+    "message": "حظر ذكي للكوكيز"
+  },
+  "smartCookieBlockDesc": {
+    "message": "تصنيف وحظر حسب الفئة"
+  },
+  "catNecessary": {
+    "message": "ضرورية"
+  },
+  "catNecessaryDesc": {
+    "message": "مصادقة، سلة، أمان"
+  },
+  "catFunctional": {
+    "message": "وظيفية"
+  },
+  "catFunctionalDesc": {
+    "message": "اللغة، السمة، إعدادات الواجهة"
+  },
+  "catAnalytics": {
+    "message": "تحليلية"
+  },
+  "catAnalyticsDesc": {
+    "message": "Google Analytics و Yandex Metrika إلخ"
+  },
+  "catAdvertising": {
+    "message": "إعلانية"
+  },
+  "catAdvertisingDesc": {
+    "message": "استهداف، إعادة استهداف، شبكات إعلانية"
+  },
+  "catAllowed": {
+    "message": "مسموح بها"
+  },
+  "antiTracker": {
+    "message": "مكافحة التتبع"
+  },
+  "antiTrackerDesc": {
+    "message": "حظر نصوص التتبع البرمجية"
+  },
+  "socialBlock": {
+    "message": "حظر وسائل التواصل الاجتماعي"
+  },
+  "socialBlockDesc": {
+    "message": "حظر التتبع عبر أدوات التواصل الاجتماعي"
+  },
+  "notifications": {
+    "message": "الإشعارات"
+  },
+  "notificationsDesc": {
+    "message": "إشعار عند اكتشاف المخاطر"
+  },
+  "showBadge": {
+    "message": "إظهار الشارة"
+  },
+  "showBadgeDesc": {
+    "message": "زر الدرع العائم على الصفحات"
+  },
+  "whitelistBuiltIn": {
+    "message": "مدمج: Google, Bing, Yandex, DuckDuckGo, Yahoo, YouTube"
+  },
+  "whitelistAdd": {
+    "message": "إضافة"
+  },
+  "historyClear": {
+    "message": "مسح السجل"
+  },
+  "historyEmpty": {
+    "message": "لا توجد بيانات بعد"
+  },
+  "saved": {
+    "message": "تم الحفظ"
+  },
+  "findings": {
+    "message": "نتائج"
+  },
+  "panelTitle": {
+    "message": "تحليل المخاطر"
+  },
+  "scanning": {
+    "message": "جارٍ الفحص..."
+  },
+  "noRisks": {
+    "message": "لم يتم العثور على مخاطر"
+  },
+  "rateLimitMsg": {
+    "message": "تم الوصول لحد API. انتظر دقيقة."
+  },
+  "socialBlocked": {
+    "message": "أدوات اجتماعية تم حظرها"
+  },
+  "errorTrackBlock": {
+    "message": "حظر متتبعات الأخطاء"
+  },
+  "errorTrackBlockDesc": {
+    "message": "Sentry, Bugsnag, Rollbar, LogRocket, TrackJS, Raygun وغيرها"
+  },
+  "btnAutoFill": {
+    "message": "ملء تلقائي"
+  },
+  "safeBrowsing": {
+    "message": "فحص Safe Browsing API"
+  },
+  "safeBrowsingDesc": {
+    "message": "فحص كل موقع عبر Google Safe Browsing API"
+  },
+  "safeBrowsingKey": {
+    "message": "مفتاح API Safe Browsing"
+  },
+  "safeBrowsingKeyHint": {
+    "message": "إنشاء مفتاح:"
+  },
+  "safeBrowsingKeyHint2": {
+    "message": "فعّل 'Safe Browsing API' في Google Cloud Console"
+  },
+  "sevCritical": {
+    "message": "حرج"
+  },
+  "sevHigh": {
+    "message": "عالي"
+  },
+  "sevMedium": {
+    "message": "متوسط"
+  },
+  "sevLow": {
+    "message": "منخفض"
+  },
+  "readOriginal": {
+    "message": "← قراءة الأصل"
+  },
+  "scoreLow": {
+    "message": "مخاطر منخفضة"
+  },
+  "scoreMedium": {
+    "message": "مخاطر متوسطة"
+  },
+  "scoreHigh": {
+    "message": "مخاطر عالية"
+  },
+  "rateLimitPanel": {
+    "message": "تم الوصول لحد API - تحليل الذكاء الاصطناعي غير متاح مؤقتاً."
+  },
+  "cookieBannerDone": {
+    "message": "تمت معالجة لافتة الكوكيز"
+  },
+  "trackersCount": {
+    "message": "المتتبعات"
+  },
+  "aiAnalysis": {
+    "message": "تحليل الذكاء الاصطناعي"
+  },
+  "noDocsFound": {
+    "message": "لم يتم العثور على مستندات EULA/ToS/سياسة الخصوصية."
+  },
+  "aiRisks": {
+    "message": "مخاطر الذكاء الاصطناعي"
+  },
+  "patterns": {
+    "message": "أنماط"
+  },
+  "noRisksFound": {
+    "message": "لم يتم العثور على مخاطر واضحة"
+  },
+  "checkboxes": {
+    "message": "مربعات الاختيار"
+  },
+  "btnSafeAutofill": {
+    "message": "ملء تلقائي آمن"
+  },
+  "btnAutoCookie": {
+    "message": "حظر الكوكيز تلقائياً"
+  },
+  "finalClick": {
+    "message": "النقرة الأخيرة لك!"
+  },
+  "filledCount": {
+    "message": "تم الملء"
+  },
+  "noData": {
+    "message": "لا توجد بيانات"
+  },
+  "processed": {
+    "message": "تمت المعالجة"
+  },
+  "kChars": {
+    "message": "K حرف"
+  },
+  "sectionSecurity": {
+    "message": "أمان المواقع"
+  },
+  "virusTotal": {
+    "message": "VirusTotal"
+  },
+  "virusTotalDesc": {
+    "message": "فحص URL بـ 70+ محرك مضاد فيروسات (مفتاح مجاني)"
+  },
+  "virusTotalKey": {
+    "message": "مفتاح API VirusTotal"
+  },
+  "virusTotalKeyHint": {
+    "message": "مفتاح مجاني:"
+  },
+  "phishTank": {
+    "message": "PhishTank"
+  },
+  "phishTankDesc": {
+    "message": "فحص في قاعدة بيانات التصيد (مجاني، بدون مفتاح)"
+  },
+  "urlHaus": {
+    "message": "URLhaus (abuse.ch)"
+  },
+  "urlHausDesc": {
+    "message": "فحص في قاعدة بيانات URL الخبيثة (مجاني، بدون مفتاح)"
+  },
+  "domainAge": {
+    "message": "تحليل عمر النطاق (WHOIS)"
+  },
+  "domainAgeDesc": {
+    "message": "تحذير من النطاقات المنشأة حديثاً (أقل من 30 يوماً)"
+  },
+  "formSecurity": {
+    "message": "فحص أمان النماذج"
+  },
+  "formSecurityDesc": {
+    "message": "حظر إذا أرسل نموذج تسجيل الدخول البيانات إلى نطاق آخر"
+  },
+  "cryptoMiner": {
+    "message": "فحص التعدين المشفر"
+  },
+  "cryptoMinerDesc": {
+    "message": "كشف وحظر المعدنين المخفيين (Coinhive وغيرها)"
+  },
+  "detectHiddenIframes": {
+    "message": "إطارات مخفية"
+  },
+  "detectHiddenIframesDesc": {
+    "message": "كشف وإزالة الإطارات غير المرئية (اختطاف النقرات، البرامج الضارة)"
+  },
+  "detectObfuscatedJS": {
+    "message": "JS مشفر"
+  },
+  "detectObfuscatedJSDesc": {
+    "message": "كشف النصوص البرمجية المشفرة (eval/atob)"
+  },
+  "detectRedirects": {
+    "message": "سلاسل إعادة التوجيه"
+  },
+  "detectRedirectsDesc": {
+    "message": "تحذير من عمليات إعادة توجيه مشبوهة عبر نطاقات مختلفة"
+  },
+  "detectExtInstall": {
+    "message": "تثبيت الإضافات"
+  },
+  "detectExtInstallDesc": {
+    "message": "كشف محاولات تحفيز تثبيت إضافات المتصفح"
+  },
+  "tabReport": {
+    "message": "Report"
+  },
+  "reportDesc": {
+    "message": "Screenshot and bug report"
+  },
+  "reportPlaceholder": {
+    "message": "Describe..."
+  },
+  "reportScreenshot": {
+    "message": "Screenshot"
+  },
+  "reportSend": {
+    "message": "Send"
+  },
+  "reportSent": {
+    "message": "Sent!"
+  },
+  "reportError": {
+    "message": "Error"
+  }
+}

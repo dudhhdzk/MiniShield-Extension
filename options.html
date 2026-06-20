@@ -1,0 +1,960 @@
+<!doctype html>
+<html lang="ru" data-i18n-title="settingsTitle">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MiniShield - Настройки</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: #f9fafb;
+        color: #111827;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        min-height: 100vh;
+      }
+      .page {
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 32px 24px 80px;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid #e5e7eb;
+      }
+      .header-icon {
+        width: 48px;
+        height: 48px;
+        background: linear-gradient(135deg, #2e7d32, #66bb6a);
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        flex-shrink: 0;
+      }
+      .header h1 {
+        font-size: 22px;
+        font-weight: 700;
+        color: #111;
+      }
+      .header p {
+        font-size: 13px;
+        color: #6b7280;
+        margin-top: 2px;
+      }
+
+      .section {
+        margin-top: 32px;
+      }
+      .section-title {
+        font-size: 11px;
+        font-weight: 700;
+        color: #6b7280;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        margin-bottom: 10px;
+      }
+      .card {
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 14px;
+        padding: 20px 24px;
+        margin-bottom: 12px;
+      }
+
+      .form-row {
+        margin-bottom: 16px;
+      }
+      .form-row:last-child {
+        margin-bottom: 0;
+      }
+      .form-row label {
+        display: block;
+        font-size: 12px;
+        font-weight: 600;
+        color: #374151;
+        margin-bottom: 5px;
+      }
+      .form-row input,
+      .form-row textarea,
+      .form-row select {
+        width: 100%;
+        padding: 10px 14px;
+        background: #f9fafb;
+        border: 1px solid #d1d5db;
+        border-radius: 10px;
+        color: #111827;
+        font-size: 13px;
+        font-family: inherit;
+        transition: border-color 0.2s;
+      }
+      .form-row textarea {
+        resize: vertical;
+        min-height: 48px;
+      }
+      .form-row input:focus,
+      .form-row textarea:focus,
+      .form-row select:focus {
+        outline: none;
+        border-color: #2e7d32;
+        background: #fff;
+      }
+      .hint {
+        font-size: 11px;
+        color: #9ca3af;
+        margin-top: 4px;
+      }
+      .hint a {
+        color: #2563eb;
+        text-decoration: none;
+      }
+      .hint a:hover {
+        text-decoration: underline;
+      }
+      .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+      @media (max-width: 500px) {
+        .form-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .toggle-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 0;
+        border-bottom: 1px solid #f3f4f6;
+      }
+      .toggle-row:last-child {
+        border-bottom: none;
+      }
+      .toggle-info {
+        flex: 1;
+      }
+      .toggle-label {
+        font-weight: 500;
+        font-size: 14px;
+        color: #111827;
+      }
+      .toggle-desc {
+        font-size: 12px;
+        color: #9ca3af;
+        margin-top: 1px;
+      }
+      .sw {
+        position: relative;
+        width: 44px;
+        height: 24px;
+        flex-shrink: 0;
+        margin-left: 16px;
+      }
+      .sw input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      .sw-s {
+        position: absolute;
+        cursor: pointer;
+        inset: 0;
+        background: #d1d5db;
+        border-radius: 12px;
+        transition: 0.25s;
+      }
+      .sw-s:before {
+        content: '';
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        left: 3px;
+        top: 3px;
+        background: #fff;
+        border-radius: 50%;
+        transition: 0.25s;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+      }
+      .sw input:checked + .sw-s {
+        background: #2e7d32;
+      }
+      .sw input:checked + .sw-s:before {
+        transform: translateX(20px);
+      }
+
+      .api-wrap {
+        position: relative;
+      }
+      .api-wrap input {
+        padding-right: 44px;
+      }
+      .api-toggle {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        color: #9ca3af;
+        cursor: pointer;
+        font-size: 18px;
+        padding: 4px;
+      }
+      .api-toggle:hover {
+        color: #374151;
+      }
+      .api-dot {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        margin-right: 5px;
+        vertical-align: middle;
+      }
+      .api-ok {
+        background: #22c55e;
+      }
+      .api-no {
+        background: #f59e0b;
+      }
+
+      .wl-list {
+        margin-top: 8px;
+      }
+      .wl-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 14px;
+        background: #f9fafb;
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+        margin-bottom: 6px;
+      }
+      .wl-item span {
+        color: #2563eb;
+        font-size: 13px;
+      }
+      .wl-rm {
+        background: none;
+        border: none;
+        color: #ef4444;
+        cursor: pointer;
+        font-size: 14px;
+        padding: 2px 8px;
+        border-radius: 6px;
+      }
+      .wl-rm:hover {
+        background: #fef2f2;
+      }
+      .wl-add {
+        display: flex;
+        gap: 8px;
+        margin-top: 10px;
+      }
+      .wl-add input {
+        flex: 1;
+        padding: 9px 14px;
+        background: #f9fafb;
+        border: 1px solid #d1d5db;
+        border-radius: 10px;
+        color: #111;
+        font-size: 13px;
+      }
+      .wl-add input:focus {
+        outline: none;
+        border-color: #2e7d32;
+      }
+      .wl-add button {
+        padding: 9px 18px;
+        background: #2e7d32;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+      .wl-add button:hover {
+        background: #388e3c;
+      }
+      .wl-note {
+        font-size: 11px;
+        color: #9ca3af;
+        margin-bottom: 6px;
+      }
+
+      .cookie-policy {
+        margin-top: 8px;
+      }
+      .cookie-cat {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid #f3f4f6;
+      }
+      .cookie-cat:last-child {
+        border-bottom: none;
+      }
+      .cc-info {
+        flex: 1;
+      }
+      .cc-name {
+        font-weight: 500;
+        font-size: 13px;
+      }
+      .cc-desc {
+        font-size: 11px;
+        color: #9ca3af;
+      }
+      .cc-tag {
+        font-size: 10px;
+        font-weight: 700;
+        padding: 2px 8px;
+        border-radius: 6px;
+        margin-left: 8px;
+        white-space: nowrap;
+      }
+      .cc-necessary {
+        background: #dcfce7;
+        color: #166534;
+      }
+      .cc-functional {
+        background: #dbeafe;
+        color: #1e40af;
+      }
+      .cc-analytics {
+        background: #fef3c7;
+        color: #92400e;
+      }
+      .cc-advertising {
+        background: #fee2e2;
+        color: #991b1b;
+      }
+
+      .hist-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 14px;
+        background: #f9fafb;
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+        margin-bottom: 6px;
+      }
+      .hist-left {
+        flex: 1;
+        min-width: 0;
+      }
+      .hist-url {
+        font-size: 13px;
+        color: #2563eb;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .hist-date {
+        font-size: 11px;
+        color: #9ca3af;
+        margin-top: 1px;
+      }
+      .hist-score {
+        font-size: 12px;
+        font-weight: 700;
+        padding: 4px 12px;
+        border-radius: 8px;
+        color: #fff;
+        flex-shrink: 0;
+        margin-left: 12px;
+      }
+      .hist-empty {
+        text-align: center;
+        padding: 40px;
+        color: #9ca3af;
+      }
+      .hist-clear {
+        font-size: 12px;
+        color: #ef4444;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 6px 0;
+        margin-top: 4px;
+      }
+      .hist-clear:hover {
+        text-decoration: underline;
+      }
+
+      .toast {
+        position: fixed;
+        bottom: 24px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #111827;
+        color: #fff;
+        padding: 10px 24px;
+        border-radius: 12px;
+        font-size: 13px;
+        font-weight: 500;
+        opacity: 0;
+        transition: opacity 0.3s;
+        pointer-events: none;
+        z-index: 100;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+      .toast.show {
+        opacity: 1;
+      }
+
+      select {
+        background: #f9fafb;
+        color: #111;
+        border: 1px solid #d1d5db;
+        border-radius: 10px;
+        padding: 8px 14px;
+        font-size: 13px;
+        font-family: inherit;
+      }
+      select:focus {
+        outline: none;
+        border-color: #2e7d32;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="header">
+        <div class="header-icon">
+          <svg
+            width="26"
+            height="26"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+        </div>
+        <div>
+          <h1 data-i18n="settingsTitle">Настройки</h1>
+          <p>MiniShield - <span data-i18n="popupSlogan">Мультитул без рекламы</span></p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title" data-i18n="sectionProfile">Профиль для автозаполнения</div>
+        <div class="card">
+          <div class="form-grid">
+            <div class="form-row">
+              <label data-i18n="firstName">Имя</label
+              ><input type="text" id="prof-firstName" placeholder="Иван" />
+            </div>
+            <div class="form-row">
+              <label data-i18n="lastName">Фамилия</label
+              ><input type="text" id="prof-lastName" placeholder="Петров" />
+            </div>
+            <div class="form-row">
+              <label data-i18n="email">Email</label
+              ><input type="email" id="prof-email" placeholder="ivan@example.com" />
+            </div>
+            <div class="form-row">
+              <label data-i18n="phone">Телефон</label
+              ><input type="tel" id="prof-phone" placeholder="+7 900 123-45-67" />
+            </div>
+            <div class="form-row">
+              <label data-i18n="username">Логин</label
+              ><input type="text" id="prof-username" placeholder="ivan_p" />
+            </div>
+            <div class="form-row">
+              <label data-i18n="birthDate">Дата рождения</label
+              ><input type="date" id="prof-birthDate" />
+            </div>
+          </div>
+          <div class="form-row">
+            <label data-i18n="organization">Организация</label
+            ><input type="text" id="prof-organization" placeholder="" />
+          </div>
+          <div class="form-row">
+            <label data-i18n="address">Адрес</label
+            ><textarea id="prof-address" placeholder=""></textarea>
+          </div>
+          <div class="form-grid">
+            <div class="form-row">
+              <label data-i18n="country">Страна</label
+              ><input type="text" id="prof-country" placeholder="" />
+            </div>
+            <div class="form-row">
+              <label data-i18n="city">Город</label
+              ><input type="text" id="prof-city" placeholder="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title" data-i18n="sectionAPI">Gemini API</div>
+        <div class="card">
+          <div class="form-row">
+            <label
+              ><span class="api-dot api-no" id="api-dot"></span>
+              <span data-i18n="apiKey">API-ключ</span></label
+            >
+            <div class="api-wrap">
+              <input type="password" id="set-geminiApiKey" placeholder="AIzaSy..." />
+              <button class="api-toggle" id="toggle-key-vis">&#9673;</button>
+            </div>
+            <div class="hint">
+              <span data-i18n="apiKeyHint">Получить:</span>
+              <a href="https://aistudio.google.com/apikey" target="_blank"
+                >aistudio.google.com/apikey</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title" data-i18n="sectionSecurity">Безопасность сайтов</div>
+        <div class="card">
+          <div class="toggle-row">
+            <div class="toggle-info">
+              <div class="toggle-label" data-i18n="safeBrowsing">Safe Browsing API проверка</div>
+              <div class="toggle-desc" data-i18n="safeBrowsingDesc">
+                Проверять каждый сайт через Google Safe Browsing API
+              </div>
+            </div>
+            <label class="sw"
+              ><input type="checkbox" id="set-safeBrowsing" checked /><span class="sw-s"></span
+            ></label>
+          </div>
+          <div class="form-row" style="margin-top: 12px">
+            <label
+              ><span class="api-dot api-no" id="sb-api-dot"></span>
+              <span data-i18n="safeBrowsingKey">API-ключ Safe Browsing</span></label
+            >
+            <div class="api-wrap">
+              <input type="password" id="set-safeBrowsingApiKey" placeholder="AIzaSy..." />
+              <button class="api-toggle" id="toggle-sb-key-vis">&#9673;</button>
+            </div>
+            <div class="hint">
+              <span data-i18n="safeBrowsingKeyHint">Создать ключ:</span>
+              <a href="https://console.cloud.google.com/apis/credentials" target="_blank"
+                >console.cloud.google.com/apis/credentials</a
+              >
+            </div>
+            <div class="hint" data-i18n="safeBrowsingKeyHint2">
+              Включите "Safe Browsing API" в Google Cloud Console > APIs & Services > Library
+            </div>
+          </div>
+
+          <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 16px 0" />
+
+          <div class="toggle-row">
+            <div class="toggle-info">
+              <div class="toggle-label" data-i18n="virusTotal">VirusTotal</div>
+              <div class="toggle-desc" data-i18n="virusTotalDesc">
+                Проверка URL 70+ антивирусами (бесплатный ключ)
+              </div>
+            </div>
+            <label class="sw"
+              ><input type="checkbox" id="set-virusTotal" /><span class="sw-s"></span
+            ></label>
+          </div>
+          <div class="form-row" style="margin-top: 8px">
+            <label
+              ><span class="api-dot api-no" id="vt-api-dot"></span>
+              <span data-i18n="virusTotalKey">API-ключ VirusTotal</span></label
+            >
+            <div class="api-wrap">
+              <input
+                type="password"
+                id="set-virusTotalApiKey"
+                placeholder="Ваш VirusTotal API key..."
+              />
+              <button class="api-toggle" id="toggle-vt-key-vis">&#9673;</button>
+            </div>
+            <div class="hint">
+              <span data-i18n="virusTotalKeyHint">Бесплатный ключ:</span>
+              <a href="https://www.virustotal.com/gui/my-apikey" target="_blank"
+                >virustotal.com/gui/my-apikey</a
+              >
+            </div>
+          </div>
+
+          <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 16px 0" />
+
+          <div class="toggle-row">
+            <div class="toggle-info">
+              <div class="toggle-label" data-i18n="phishTank">PhishTank</div>
+              <div class="toggle-desc" data-i18n="phishTankDesc">
+                Проверка по базе фишинговых сайтов (бесплатно, без ключа)
+              </div>
+            </div>
+            <label class="sw"
+              ><input type="checkbox" id="set-phishTank" checked /><span class="sw-s"></span
+            ></label>
+          </div>
+
+          <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 16px 0" />
+
+          <div class="toggle-row">
+            <div class="toggle-info">
+              <div class="toggle-label" data-i18n="urlHaus">URLhaus (abuse.ch)</div>
+              <div class="toggle-desc" data-i18n="urlHausDesc">
+                Проверка по базе вредоносных URL (бесплатно, без ключа)
+              </div>
+            </div>
+            <label class="sw"
+              ><input type="checkbox" id="set-urlHaus" checked /><span class="sw-s"></span
+            ></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title" data-i18n="sectionAnalysis">Анализ</div>
+        <div class="card">
+          <div class="toggle-row">
+            <div class="toggle-info">
+              <div class="toggle-label" data-i18n="autoScan">Автосканирование</div>
+              <div class="toggle-desc" data-i18n="autoScanDesc">
+                Анализировать при открытии страницы
+              </div>
+            </div>
+            <label class="sw"
+              ><input type="checkbox" id="set-autoScan" checked /><span class="sw-s"></span
+            ></label>
+          </div>
+
+          <div
+            id="access-mode-box"
+            style="
+              margin: 8px 0;
+              padding: 12px 16px;
+              border-radius: 10px;
+              font-size: 13px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              gap: 12px;
+            "
+          >
+            <div>
+              <div id="access-mode-title" style="font-weight: 600; margin-bottom: 2px"></div>
+              <div id="access-mode-desc" style="color: #888; font-size: 12px"></div>
+            </div>
+            <button
+              id="btn-toggle-access"
+              style="
+                padding: 8px 18px;
+                border: none;
+                border-radius: 8px;
+                font-size: 13px;
+                font-weight: 600;
+                cursor: pointer;
+                white-space: nowrap;
+              "
+            ></button>
+          </div>
+          <div class="toggle-row">
+            <div class="toggle-info">
+              <div class="toggle-label" data-i18n="useAI">ИИ-анализ (Gemini)</div>
+              <div class="toggle-desc" data-i18n="useAIDesc">
+                Глубокий анализ документов нейросетью
+              </div>
+            </div>
+            <label class="sw"
+              ><input type="checkbox" id="set-useAI" checked /><span class="sw-s"></span
+            ></label>
+          </div>
+          <div class="toggle-row">
+            <div class="toggle-info">
+              <div class="toggle-label" data-i18n="autoFill">Автозаполнение</div>
+              <div class="toggle-desc" data-i18n="autoFillDesc">
+                Предлагать заполнить формы из профиля
+              </div>
+            </div>
+            <label class="sw"
+              ><input type="checkbox" id="set-autoFill" checked /><span class="sw-s"></span
+            ></label>
+          </div>
+          <div class="toggle-row" style="border: none">
+            <div class="toggle-info">
+              <div class="toggle-label" data-i18n="riskLevel">Уровень рисков</div>
+            </div>
+            <select id="set-riskLevel">
+              <option value="all" data-i18n="riskAll">Все</option>
+              <option value="high" data-i18n="riskHigh">Высокие+</option>
+              <option value="critical" data-i18n="riskCritical">Только критические</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title" data-i18n="sectionCookiePolicy">Cookie-политика</div>
+        <div class="card">
+          <div class="toggle-row">
+            <div class="toggle-info">
+              <div class="toggle-label" data-i18n="smartCookieBlock">Умная блокировка cookie</div>
+              <div class="toggle-desc" data-i18n="smartCookieBlockDesc">
+                Классификация и блокировка по категориям
+              </div>
+            </div>
+            <label class="sw"
+              ><input type="checkbox" id="set-blockCookies" /><span class="sw-s"></span
+            ></label>
+          </div>
+          <div class="cookie-policy" id="cookie-policy-section">
+            <div class="cookie-cat">
+              <div class="cc-info">
+                <div class="cc-name" data-i18n="catNecessary">Необходимые</div>
+                <div class="cc-desc" data-i18n="catNecessaryDesc">
+                  Авторизация, корзина, безопасность
+                </div>
+              </div>
+              <span class="cc-tag cc-necessary" data-i18n="catAllowed">Разрешены</span>
+            </div>
+            <div class="cookie-cat">
+              <div class="cc-info">
+                <div class="cc-name" data-i18n="catFunctional">Функциональные</div>
+                <div class="cc-desc" data-i18n="catFunctionalDesc">
+                  Язык, тема, настройки интерфейса
+                </div>
+              </div>
+              <label class="sw"
+                ><input type="checkbox" id="cp-functional" checked /><span class="sw-s"></span
+              ></label>
+            </div>
+            <div class="cookie-cat">
+              <div class="cc-info">
+                <div class="cc-name" data-i18n="catAnalytics">Аналитические</div>
+                <div class="cc-desc" data-i18n="catAnalyticsDesc">
+                  Google Analytics, Yandex Metrika и т.д.
+                </div>
+              </div>
+              <label class="sw"
+                ><input type="checkbox" id="cp-analytics" /><span class="sw-s"></span
+              ></label>
+            </div>
+            <div class="cookie-cat">
+              <div class="cc-info">
+                <div class="cc-name" data-i18n="catAdvertising">Рекламные</div>
+                <div class="cc-desc" data-i18n="catAdvertisingDesc">
+                  Таргетинг, ретаргетинг, рекламные сети
+                </div>
+              </div>
+              <label class="sw"
+                ><input type="checkbox" id="cp-advertising" /><span class="sw-s"></span
+              ></label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title" data-i18n="sectionProtection">Защита</div>
+        <div class="card">
+          <div class="toggle-row">
+            <div class="toggle-info">
+              <div class="toggle-label" data-i18n="antiTracker">Антитрекер</div>
+              <div class="toggle-desc" data-i18n="antiTrackerDesc">
+                Блокировка скриптов отслеживания
+              </div>
+            </div>
+            <label class="sw"
+              ><input type="checkbox" id="set-antiTracker" /><span class="sw-s"></span
+            ></label>
+          </div>
+          <div class="toggle-row">
+            <div class="toggle-info">
+              <div class="toggle-label" data-i18n="socialBlock">Блокировка соцсетей</div>
+              <div class="toggle-desc" data-i18n="socialBlockDesc">
+                Блокировать отслеживание через значки социальных сетей
+              </div>
+            </div>
+            <label class="sw"
+              ><input type="checkbox" id="set-blockSocial" /><span class="sw-s"></span
+            ></label>
+          </div>
+          <div class="toggle-row">
+            <div class="toggle-info">
+              <div class="toggle-label" data-i18n="errorTrackBlock">Блокировка сбора ошибок</div>
+              <div class="toggle-desc" data-i18n="errorTrackBlockDesc">
+                Sentry, Bugsnag, Rollbar, LogRocket, TrackJS, Raygun и др.
+              </div>
+            </div>
+            <label class="sw"
+              ><input type="checkbox" id="set-blockErrorTrackers" /><span class="sw-s"></span
+            ></label>
+          </div>
+          <div class="toggle-row">
+            <div class="toggle-info">
+              <div class="toggle-label" data-i18n="domainAge">Анализ возраста домена (WHOIS)</div>
+              <div class="toggle-desc" data-i18n="domainAgeDesc">
+                Предупреждать о свежесозданных доменах (&lt; 30 дней)
+              </div>
+            </div>
+            <label class="sw"
+              ><input type="checkbox" id="set-checkDomainAge" checked /><span class="sw-s"></span
+            ></label>
+          </div>
+          <div class="toggle-row">
+            <div class="toggle-info">
+              <div class="toggle-label" data-i18n="formSecurity">Проверка форм на безопасность</div>
+              <div class="toggle-desc" data-i18n="formSecurityDesc">
+                Блокировать если форма логина отправляет данные на чужой домен
+              </div>
+            </div>
+            <label class="sw"
+              ><input type="checkbox" id="set-formSecurity" checked /><span class="sw-s"></span
+            ></label>
+          </div>
+          <div class="toggle-row">
+            <div class="toggle-info">
+              <div class="toggle-label" data-i18n="cryptoMiner">Сканирование на криптомайнеры</div>
+              <span
+                style="
+                  display: inline-block;
+                  background: linear-gradient(135deg, #f59e0b, #d97706);
+                  color: #fff;
+                  font-size: 10px;
+                  font-weight: 700;
+                  padding: 2px 7px;
+                  border-radius: 4px;
+                  margin-left: 6px;
+                  vertical-align: middle;
+                  letter-spacing: 0.3px;
+                "
+                >КРИПТО</span
+              >
+              <div class="toggle-desc" data-i18n="cryptoMinerDesc">
+                Обнаружение и блокировка скрытых майнеров (Coinhive и др.)
+              </div>
+            </div>
+            <label class="sw"
+              ><input type="checkbox" id="set-blockCryptoMiners" checked /><span class="sw-s"></span
+            ></label>
+          </div>
+          <div class="toggle-row">
+            <div class="toggle-info">
+              <div class="toggle-label">Скрытые iframe</div>
+              <div class="toggle-desc">
+                Детект и удаление невидимых iframe (clickjacking, малварь)
+              </div>
+            </div>
+            <label class="sw"
+              ><input type="checkbox" id="set-detectHiddenIframes" checked /><span
+                class="sw-s"
+              ></span
+            ></label>
+          </div>
+          <div class="toggle-row">
+            <div class="toggle-info">
+              <div class="toggle-label">Obfuscated JS</div>
+              <div class="toggle-desc">
+                Эвристика на закодированные скрипты (eval/atob, fromCharCode)
+              </div>
+            </div>
+            <label class="sw"
+              ><input type="checkbox" id="set-detectObfuscatedJS" checked /><span
+                class="sw-s"
+              ></span
+            ></label>
+          </div>
+          <div class="toggle-row">
+            <div class="toggle-info">
+              <div class="toggle-label">Цепочки редиректов</div>
+              <div class="toggle-desc">
+                Предупреждение при подозрительных редиректах через разные домены
+              </div>
+            </div>
+            <label class="sw"
+              ><input type="checkbox" id="set-detectRedirects" checked /><span class="sw-s"></span
+            ></label>
+          </div>
+          <div class="toggle-row">
+            <div class="toggle-info">
+              <div class="toggle-label">Установка расширений</div>
+              <div class="toggle-desc">
+                Детект попыток спровоцировать установку расширений браузера
+              </div>
+            </div>
+            <label class="sw"
+              ><input type="checkbox" id="set-detectExtInstall" checked /><span class="sw-s"></span
+            ></label>
+          </div>
+          <div class="toggle-row" style="border: none">
+            <div class="toggle-info">
+              <div class="toggle-label" data-i18n="notifications">Уведомления</div>
+              <div class="toggle-desc" data-i18n="notificationsDesc">
+                Уведомлять об обнаруженных рисках
+              </div>
+            </div>
+            <label class="sw"
+              ><input type="checkbox" id="set-notifications" checked /><span class="sw-s"></span
+            ></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title" data-i18n="sectionInterface">Интерфейс</div>
+        <div class="card">
+          <div class="toggle-row" style="border: none">
+            <div class="toggle-info">
+              <div class="toggle-label" data-i18n="showBadge">Показывать бейдж</div>
+              <div class="toggle-desc" data-i18n="showBadgeDesc">
+                Плавающая кнопка-щит на страницах
+              </div>
+            </div>
+            <label class="sw"
+              ><input type="checkbox" id="set-showBadge" checked /><span class="sw-s"></span
+            ></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title" data-i18n="sectionWhitelist">Белый список</div>
+        <div class="card">
+          <div class="wl-note" data-i18n="whitelistBuiltIn">
+            Встроенные: Google, Bing, Yandex, DuckDuckGo, Yahoo, YouTube
+          </div>
+          <div class="wl-list" id="whitelist-items"></div>
+          <div class="wl-add">
+            <input type="text" id="whitelist-input" placeholder="example.com" />
+            <button id="whitelist-add" data-i18n="whitelistAdd">Добавить</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title" data-i18n="sectionHistory">История анализов</div>
+        <div class="card">
+          <div id="history-list"></div>
+          <button class="hist-clear" id="history-clear" data-i18n="historyClear">
+            Очистить историю
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" data-i18n="saved">Сохранено</div>
+    <script src="i18n.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>

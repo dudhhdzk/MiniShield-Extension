@@ -1,0 +1,407 @@
+{
+  "extName": {
+    "message": "MiniShield"
+  },
+  "extDescription": {
+    "message": "无广告多功能工具。分析 EULA/ToS/隐私政策，安全自动填充"
+  },
+  "popupTitle": {
+    "message": "MiniShield"
+  },
+  "popupSlogan": {
+    "message": "无广告多功能工具"
+  },
+  "btnScan": {
+    "message": "扫描网站"
+  },
+  "btnCookies": {
+    "message": "拦截Cookie"
+  },
+  "btnSettings": {
+    "message": "全部设置"
+  },
+  "toggleAutoScan": {
+    "message": "自动扫描"
+  },
+  "toggleAI": {
+    "message": "AI分析 (Gemini)"
+  },
+  "toggleAutoFill": {
+    "message": "自动填充"
+  },
+  "settingsTitle": {
+    "message": "设置"
+  },
+  "sectionProfile": {
+    "message": "自动填充配置文件"
+  },
+  "sectionAPI": {
+    "message": "Gemini API"
+  },
+  "sectionAnalysis": {
+    "message": "分析"
+  },
+  "sectionCookiePolicy": {
+    "message": "Cookie策略"
+  },
+  "sectionProtection": {
+    "message": "保护"
+  },
+  "sectionInterface": {
+    "message": "界面"
+  },
+  "sectionWhitelist": {
+    "message": "白名单"
+  },
+  "sectionHistory": {
+    "message": "分析历史"
+  },
+  "firstName": {
+    "message": "名字"
+  },
+  "lastName": {
+    "message": "姓氏"
+  },
+  "email": {
+    "message": "邮箱"
+  },
+  "phone": {
+    "message": "电话"
+  },
+  "username": {
+    "message": "用户名"
+  },
+  "birthDate": {
+    "message": "出生日期"
+  },
+  "organization": {
+    "message": "组织"
+  },
+  "address": {
+    "message": "地址"
+  },
+  "country": {
+    "message": "国家"
+  },
+  "city": {
+    "message": "城市"
+  },
+  "apiKey": {
+    "message": "API密钥"
+  },
+  "apiKeyHint": {
+    "message": "获取:"
+  },
+  "autoScan": {
+    "message": "自动扫描"
+  },
+  "autoScanDesc": {
+    "message": "打开页面时自动分析"
+  },
+  "autoScanAll": {
+    "message": "扫描所有网站"
+  },
+  "autoScanAllDesc": {
+    "message": "需要所有网站的权限"
+  },
+  "useAI": {
+    "message": "AI分析 (Gemini)"
+  },
+  "useAIDesc": {
+    "message": "AI深度文档分析"
+  },
+  "autoFill": {
+    "message": "自动填充"
+  },
+  "autoFillDesc": {
+    "message": "建议从配置文件填充表单"
+  },
+  "riskLevel": {
+    "message": "风险级别"
+  },
+  "riskAll": {
+    "message": "全部"
+  },
+  "riskHigh": {
+    "message": "高+"
+  },
+  "riskCritical": {
+    "message": "仅严重"
+  },
+  "smartCookieBlock": {
+    "message": "智能Cookie拦截"
+  },
+  "smartCookieBlockDesc": {
+    "message": "按类别分类和拦截"
+  },
+  "catNecessary": {
+    "message": "必要的"
+  },
+  "catNecessaryDesc": {
+    "message": "认证、购物车、安全"
+  },
+  "catFunctional": {
+    "message": "功能性的"
+  },
+  "catFunctionalDesc": {
+    "message": "语言、主题、界面设置"
+  },
+  "catAnalytics": {
+    "message": "分析性的"
+  },
+  "catAnalyticsDesc": {
+    "message": "Google Analytics、Yandex Metrika等"
+  },
+  "catAdvertising": {
+    "message": "广告性的"
+  },
+  "catAdvertisingDesc": {
+    "message": "定向、再营销、广告网络"
+  },
+  "catAllowed": {
+    "message": "已允许"
+  },
+  "antiTracker": {
+    "message": "反追踪"
+  },
+  "antiTrackerDesc": {
+    "message": "拦截追踪脚本"
+  },
+  "socialBlock": {
+    "message": "社交媒体拦截"
+  },
+  "socialBlockDesc": {
+    "message": "拦截通过社交媒体控件的追踪"
+  },
+  "notifications": {
+    "message": "通知"
+  },
+  "notificationsDesc": {
+    "message": "通知检测到的风险"
+  },
+  "showBadge": {
+    "message": "显示徽章"
+  },
+  "showBadgeDesc": {
+    "message": "页面上的浮动盾牌按钮"
+  },
+  "whitelistBuiltIn": {
+    "message": "内置: Google, Bing, Yandex, DuckDuckGo, Yahoo, YouTube"
+  },
+  "whitelistAdd": {
+    "message": "添加"
+  },
+  "historyClear": {
+    "message": "清除历史"
+  },
+  "historyEmpty": {
+    "message": "暂无数据"
+  },
+  "saved": {
+    "message": "已保存"
+  },
+  "findings": {
+    "message": "个发现"
+  },
+  "panelTitle": {
+    "message": "风险分析"
+  },
+  "scanning": {
+    "message": "扫描中..."
+  },
+  "noRisks": {
+    "message": "未发现风险"
+  },
+  "rateLimitMsg": {
+    "message": "API速率限制已达到。请稍候。"
+  },
+  "socialBlocked": {
+    "message": "个社交控件已拦截"
+  },
+  "errorTrackBlock": {
+    "message": "阻止错误跟踪"
+  },
+  "errorTrackBlockDesc": {
+    "message": "Sentry, Bugsnag, Rollbar, LogRocket, TrackJS, Raygun 等"
+  },
+  "btnAutoFill": {
+    "message": "自动填充"
+  },
+  "safeBrowsing": {
+    "message": "Safe Browsing API 检查"
+  },
+  "safeBrowsingDesc": {
+    "message": "通过 Google Safe Browsing API 检查每个站点"
+  },
+  "safeBrowsingKey": {
+    "message": "Safe Browsing API 密钥"
+  },
+  "safeBrowsingKeyHint": {
+    "message": "创建密钥:"
+  },
+  "safeBrowsingKeyHint2": {
+    "message": "在 Google Cloud Console 中启用 'Safe Browsing API'"
+  },
+  "sevCritical": {
+    "message": "严重"
+  },
+  "sevHigh": {
+    "message": "高"
+  },
+  "sevMedium": {
+    "message": "中等"
+  },
+  "sevLow": {
+    "message": "低"
+  },
+  "readOriginal": {
+    "message": "查看原文 →"
+  },
+  "scoreLow": {
+    "message": "低风险"
+  },
+  "scoreMedium": {
+    "message": "中等风险"
+  },
+  "scoreHigh": {
+    "message": "高风险"
+  },
+  "rateLimitPanel": {
+    "message": "API限制已达 - AI分析暂时不可用。请稍等。"
+  },
+  "cookieBannerDone": {
+    "message": "Cookie横幅已处理"
+  },
+  "trackersCount": {
+    "message": "追踪器"
+  },
+  "aiAnalysis": {
+    "message": "AI分析"
+  },
+  "noDocsFound": {
+    "message": "未找到EULA/ToS/隐私政策文档。"
+  },
+  "aiRisks": {
+    "message": "AI风险"
+  },
+  "patterns": {
+    "message": "模式"
+  },
+  "noRisksFound": {
+    "message": "未发现明显风险"
+  },
+  "checkboxes": {
+    "message": "复选框"
+  },
+  "btnSafeAutofill": {
+    "message": "安全自动填充"
+  },
+  "btnAutoCookie": {
+    "message": "自动阻止Cookie"
+  },
+  "finalClick": {
+    "message": "最终点击由您决定！"
+  },
+  "filledCount": {
+    "message": "已填充"
+  },
+  "noData": {
+    "message": "无数据"
+  },
+  "processed": {
+    "message": "已处理"
+  },
+  "kChars": {
+    "message": "K字符"
+  },
+  "sectionSecurity": {
+    "message": "网站安全"
+  },
+  "virusTotal": {
+    "message": "VirusTotal"
+  },
+  "virusTotalDesc": {
+    "message": "70+杀毒引擎检测URL（免费密钥）"
+  },
+  "virusTotalKey": {
+    "message": "VirusTotal API密钥"
+  },
+  "virusTotalKeyHint": {
+    "message": "免费密钥："
+  },
+  "phishTank": {
+    "message": "PhishTank"
+  },
+  "phishTankDesc": {
+    "message": "钓鱼网站数据库检测（免费，无需密钥）"
+  },
+  "urlHaus": {
+    "message": "URLhaus (abuse.ch)"
+  },
+  "urlHausDesc": {
+    "message": "恶意URL数据库检测（免费，无需密钥）"
+  },
+  "domainAge": {
+    "message": "域名年龄分析 (WHOIS)"
+  },
+  "domainAgeDesc": {
+    "message": "警告新创建的域名（< 30天）"
+  },
+  "formSecurity": {
+    "message": "表单安全检查"
+  },
+  "formSecurityDesc": {
+    "message": "如果登录表单向其他域名发送数据则阻止"
+  },
+  "cryptoMiner": {
+    "message": "加密矿工扫描"
+  },
+  "cryptoMinerDesc": {
+    "message": "检测并阻止隐藏的矿工（Coinhive等）"
+  },
+  "detectHiddenIframes": {
+    "message": "隐藏iframe"
+  },
+  "detectHiddenIframesDesc": {
+    "message": "检测并删除不可见的iframe（点击劫持，恶意软件）"
+  },
+  "detectObfuscatedJS": {
+    "message": "混淆JS"
+  },
+  "detectObfuscatedJSDesc": {
+    "message": "编码脚本启发式检测（eval/atob, fromCharCode）"
+  },
+  "detectRedirects": {
+    "message": "重定向链"
+  },
+  "detectRedirectsDesc": {
+    "message": "可疑跨域重定向警告"
+  },
+  "detectExtInstall": {
+    "message": "扩展安装"
+  },
+  "detectExtInstallDesc": {
+    "message": "检测诱导安装浏览器扩展的行为"
+  },
+  "tabReport": {
+    "message": "Report"
+  },
+  "reportDesc": {
+    "message": "Screenshot and bug report"
+  },
+  "reportPlaceholder": {
+    "message": "Describe..."
+  },
+  "reportScreenshot": {
+    "message": "Screenshot"
+  },
+  "reportSend": {
+    "message": "Send"
+  },
+  "reportSent": {
+    "message": "Sent!"
+  },
+  "reportError": {
+    "message": "Error"
+  }
+}

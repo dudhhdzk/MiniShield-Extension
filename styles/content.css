@@ -1,0 +1,445 @@
+#eula-alert-badge {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 2147483647;
+  cursor: grab;
+  transition: transform 0.2s;
+  animation: eula-alert-badge-in 0.4s ease-out;
+  touch-action: none;
+  user-select: none;
+}
+#eula-alert-badge:active {
+  cursor: grabbing;
+}
+#eula-alert-badge:hover {
+  transform: scale(1.1);
+}
+.eula-alert-badge-inner {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(46, 125, 50, 0.35);
+  position: relative;
+}
+.eula-alert-badge-count {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: #ef4444;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  box-shadow: 0 2px 6px rgba(239, 68, 68, 0.4);
+}
+@keyframes eula-alert-badge-in {
+  from {
+    transform: scale(0) rotate(-180deg);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+  }
+}
+
+#eula-alert-panel {
+  position: fixed;
+  top: 0;
+  right: -420px;
+  width: 400px;
+  height: 100vh;
+  background: #fff;
+  z-index: 2147483646;
+  transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  color: #111827;
+  box-shadow: -4px 0 30px rgba(0, 0, 0, 0.12);
+  line-height: 1.5;
+}
+#eula-alert-panel * {
+  box-sizing: border-box;
+}
+#eula-alert-panel.eula-alert-panel-visible {
+  right: 0;
+}
+
+.eula-alert-panel-header {
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.eula-alert-panel-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.eula-alert-panel-close {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  opacity: 0.8;
+  transition:
+    opacity 0.2s,
+    background 0.2s;
+  line-height: 1;
+}
+.eula-alert-panel-close:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.eula-alert-panel-body {
+  padding: 16px 20px;
+}
+
+.eula-alert-loading {
+  text-align: center;
+  padding: 48px 20px;
+  color: #6b7280;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.eula-alert-spinner {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border: 3px solid #e5e7eb;
+  border-top-color: #2e7d32;
+  border-radius: 50%;
+  animation: eula-spin 0.8s linear infinite;
+}
+@keyframes eula-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.eula-alert-rate-limit-bar {
+  padding: 12px 16px;
+  background: #fffbeb;
+  border: 1px solid #fbbf24;
+  border-radius: 10px;
+  color: #92400e;
+  font-size: 12px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.eula-alert-protection-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.eula-alert-prot-item {
+  font-size: 12px;
+  padding: 6px 12px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  color: #166534;
+}
+
+.eula-alert-score {
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 16px;
+}
+.eula-alert-score-circle {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 8px;
+}
+.eula-alert-score-svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+.eula-alert-score-bg {
+  fill: none;
+  stroke: #e5e7eb;
+  stroke-width: 3;
+}
+.eula-alert-score-fg {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.6s ease;
+}
+.eula-alert-score-text {
+  fill: #111827;
+  font-size: 10px;
+  font-weight: 700;
+  text-anchor: middle;
+  dominant-baseline: middle;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.eula-alert-score-label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.eula-alert-ai-box {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+}
+.eula-alert-ai-head {
+  font-weight: 600;
+  font-size: 13px;
+  color: #166534;
+  margin-bottom: 6px;
+}
+.eula-alert-ai-summary {
+  font-size: 13px;
+  color: #374151;
+  line-height: 1.6;
+}
+.eula-alert-ai-rec {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #2563eb;
+  background: #eff6ff;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.eula-alert-doc-section {
+  margin-bottom: 16px;
+  padding: 14px 16px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+.eula-alert-doc-title {
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+.eula-alert-doc-title a {
+  color: #2563eb;
+  text-decoration: none;
+}
+.eula-alert-doc-title a:hover {
+  text-decoration: underline;
+}
+.eula-alert-doc-meta {
+  font-size: 11px;
+  color: #9ca3af;
+  margin-bottom: 8px;
+}
+.eula-alert-subsection {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+  margin: 10px 0 6px;
+  padding-top: 8px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.eula-alert-finding {
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  border-left: 3px solid #d1d5db;
+}
+.eula-alert-severity-critical {
+  border-left-color: #ef4444;
+  background: #fef2f2;
+}
+.eula-alert-severity-high {
+  border-left-color: #f97316;
+  background: #fff7ed;
+}
+.eula-alert-severity-medium {
+  border-left-color: #f59e0b;
+  background: #fffbeb;
+}
+.eula-alert-severity-low {
+  border-left-color: #22c55e;
+  background: #f0fdf4;
+}
+.eula-alert-finding-head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+.eula-alert-finding-icon {
+  font-size: 14px;
+}
+.eula-alert-finding-label {
+  font-weight: 600;
+  font-size: 13px;
+  flex: 1;
+}
+.eula-alert-finding-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 6px;
+  color: #fff;
+}
+.eula-alert-sev-critical {
+  background: #ef4444;
+}
+.eula-alert-sev-high {
+  background: #f97316;
+}
+.eula-alert-sev-medium {
+  background: #f59e0b;
+}
+.eula-alert-sev-low {
+  background: #22c55e;
+}
+.eula-alert-finding-desc {
+  font-size: 12px;
+  color: #374151;
+  margin-top: 4px;
+  line-height: 1.5;
+}
+.eula-alert-finding-excerpts {
+  margin-top: 6px;
+}
+.eula-alert-excerpt {
+  font-size: 11px;
+  color: #6b7280;
+  background: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-bottom: 4px;
+  border: 1px solid #e5e7eb;
+  font-style: italic;
+}
+.eula-alert-finding-link {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 11px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.eula-alert-finding-link:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+.eula-alert-finding-ok {
+  text-align: center;
+  padding: 16px;
+  color: #16a34a;
+  font-size: 13px;
+}
+
+.eula-alert-section-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  margin: 14px 0 8px;
+  padding-top: 10px;
+  border-top: 1px solid #e5e7eb;
+}
+.eula-alert-checkbox-warn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: #92400e;
+}
+.eula-alert-cb-status {
+  margin-left: auto;
+  font-size: 16px;
+}
+
+.eula-alert-actions {
+  padding: 16px 0 8px;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 16px;
+}
+.eula-alert-btn {
+  width: 100%;
+  padding: 11px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 8px;
+  font-family: inherit;
+  transition:
+    background 0.2s,
+    transform 0.1s;
+}
+.eula-alert-btn:active {
+  transform: scale(0.98);
+}
+.eula-alert-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+  transform: none;
+}
+.eula-alert-btn-fill {
+  background: #2e7d32;
+  color: #fff;
+}
+.eula-alert-btn-fill:hover:not(:disabled) {
+  background: #388e3c;
+}
+.eula-alert-btn-cookie {
+  background: #fff7ed;
+  color: #9a3412;
+  border: 1px solid #fed7aa;
+}
+.eula-alert-btn-cookie:hover:not(:disabled) {
+  background: #ffedd5;
+}
+.eula-alert-hint {
+  text-align: center;
+  font-size: 11px;
+  color: #9ca3af;
+  margin-top: 4px;
+}
+
+.eula-alert-empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: #9ca3af;
+  font-size: 13px;
+}

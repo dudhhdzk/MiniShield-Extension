@@ -1,0 +1,407 @@
+{
+  "extName": {
+    "message": "MiniShield"
+  },
+  "extDescription": {
+    "message": "광고 없는 멀티툴. EULA/ToS/개인정보 처리방침 분석 및 안전한 자동 완성"
+  },
+  "popupTitle": {
+    "message": "MiniShield"
+  },
+  "popupSlogan": {
+    "message": "광고 없는 멀티툴"
+  },
+  "btnScan": {
+    "message": "사이트 스캔"
+  },
+  "btnCookies": {
+    "message": "쿠키 차단"
+  },
+  "btnSettings": {
+    "message": "전체 설정"
+  },
+  "toggleAutoScan": {
+    "message": "자동 스캔"
+  },
+  "toggleAI": {
+    "message": "AI 분석 (Gemini)"
+  },
+  "toggleAutoFill": {
+    "message": "자동완성"
+  },
+  "settingsTitle": {
+    "message": "설정"
+  },
+  "sectionProfile": {
+    "message": "자동완성 프로필"
+  },
+  "sectionAPI": {
+    "message": "Gemini API"
+  },
+  "sectionAnalysis": {
+    "message": "분석"
+  },
+  "sectionCookiePolicy": {
+    "message": "쿠키 정책"
+  },
+  "sectionProtection": {
+    "message": "보호"
+  },
+  "sectionInterface": {
+    "message": "인터페이스"
+  },
+  "sectionWhitelist": {
+    "message": "화이트리스트"
+  },
+  "sectionHistory": {
+    "message": "분석 기록"
+  },
+  "firstName": {
+    "message": "이름"
+  },
+  "lastName": {
+    "message": "성"
+  },
+  "email": {
+    "message": "이메일"
+  },
+  "phone": {
+    "message": "전화번호"
+  },
+  "username": {
+    "message": "사용자명"
+  },
+  "birthDate": {
+    "message": "생년월일"
+  },
+  "organization": {
+    "message": "조직"
+  },
+  "address": {
+    "message": "주소"
+  },
+  "country": {
+    "message": "국가"
+  },
+  "city": {
+    "message": "도시"
+  },
+  "apiKey": {
+    "message": "API 키"
+  },
+  "apiKeyHint": {
+    "message": "키 받기:"
+  },
+  "autoScan": {
+    "message": "자동 스캔"
+  },
+  "autoScanDesc": {
+    "message": "페이지 열 때 분석"
+  },
+  "autoScanAll": {
+    "message": "모든 사이트 스캔"
+  },
+  "autoScanAllDesc": {
+    "message": "모든 사이트 권한 필요"
+  },
+  "useAI": {
+    "message": "AI 분석 (Gemini)"
+  },
+  "useAIDesc": {
+    "message": "AI를 통한 심층 분석"
+  },
+  "autoFill": {
+    "message": "자동완성"
+  },
+  "autoFillDesc": {
+    "message": "프로필에서 양식 자동 입력 제안"
+  },
+  "riskLevel": {
+    "message": "위험 수준"
+  },
+  "riskAll": {
+    "message": "전체"
+  },
+  "riskHigh": {
+    "message": "높음+"
+  },
+  "riskCritical": {
+    "message": "심각만"
+  },
+  "smartCookieBlock": {
+    "message": "스마트 쿠키 차단"
+  },
+  "smartCookieBlockDesc": {
+    "message": "카테고리별 분류 및 차단"
+  },
+  "catNecessary": {
+    "message": "필수"
+  },
+  "catNecessaryDesc": {
+    "message": "인증, 장바구니, 보안"
+  },
+  "catFunctional": {
+    "message": "기능적"
+  },
+  "catFunctionalDesc": {
+    "message": "언어, 테마, UI 설정"
+  },
+  "catAnalytics": {
+    "message": "분석"
+  },
+  "catAnalyticsDesc": {
+    "message": "Google Analytics, Yandex Metrika 등"
+  },
+  "catAdvertising": {
+    "message": "광고"
+  },
+  "catAdvertisingDesc": {
+    "message": "타겟팅, 리타겟팅, 광고 네트워크"
+  },
+  "catAllowed": {
+    "message": "허용됨"
+  },
+  "antiTracker": {
+    "message": "안티 트래커"
+  },
+  "antiTrackerDesc": {
+    "message": "추적 스크립트 차단"
+  },
+  "socialBlock": {
+    "message": "소셜 미디어 차단"
+  },
+  "socialBlockDesc": {
+    "message": "소셜 위젯을 통한 추적 차단"
+  },
+  "notifications": {
+    "message": "알림"
+  },
+  "notificationsDesc": {
+    "message": "감지된 위험 알림"
+  },
+  "showBadge": {
+    "message": "배지 표시"
+  },
+  "showBadgeDesc": {
+    "message": "페이지의 플로팅 방패 버튼"
+  },
+  "whitelistBuiltIn": {
+    "message": "내장: Google, Bing, Yandex, DuckDuckGo, Yahoo, YouTube"
+  },
+  "whitelistAdd": {
+    "message": "추가"
+  },
+  "historyClear": {
+    "message": "기록 삭제"
+  },
+  "historyEmpty": {
+    "message": "아직 데이터 없음"
+  },
+  "saved": {
+    "message": "저장됨"
+  },
+  "findings": {
+    "message": "개 발견"
+  },
+  "panelTitle": {
+    "message": "위험 분석"
+  },
+  "scanning": {
+    "message": "스캔 중..."
+  },
+  "noRisks": {
+    "message": "위험이 발견되지 않았습니다"
+  },
+  "rateLimitMsg": {
+    "message": "API 속도 제한 도달. 잠시 기다려 주세요."
+  },
+  "socialBlocked": {
+    "message": "소셜 위젯 차단됨"
+  },
+  "errorTrackBlock": {
+    "message": "오류 추적기 차단"
+  },
+  "errorTrackBlockDesc": {
+    "message": "Sentry, Bugsnag, Rollbar, LogRocket, TrackJS, Raygun 등"
+  },
+  "btnAutoFill": {
+    "message": "자동 입력"
+  },
+  "safeBrowsing": {
+    "message": "Safe Browsing API 검사"
+  },
+  "safeBrowsingDesc": {
+    "message": "Google Safe Browsing API로 모든 사이트 확인"
+  },
+  "safeBrowsingKey": {
+    "message": "Safe Browsing API 키"
+  },
+  "safeBrowsingKeyHint": {
+    "message": "키 만들기:"
+  },
+  "safeBrowsingKeyHint2": {
+    "message": "Google Cloud Console에서 'Safe Browsing API'를 활성화하세요"
+  },
+  "sevCritical": {
+    "message": "심각"
+  },
+  "sevHigh": {
+    "message": "높음"
+  },
+  "sevMedium": {
+    "message": "보통"
+  },
+  "sevLow": {
+    "message": "낮음"
+  },
+  "readOriginal": {
+    "message": "원본 읽기 →"
+  },
+  "scoreLow": {
+    "message": "낮은 위험"
+  },
+  "scoreMedium": {
+    "message": "중간 위험"
+  },
+  "scoreHigh": {
+    "message": "높은 위험"
+  },
+  "rateLimitPanel": {
+    "message": "API 한도 도달 - AI 분석 일시 중단."
+  },
+  "cookieBannerDone": {
+    "message": "쿠키 배너 처리됨"
+  },
+  "trackersCount": {
+    "message": "추적기"
+  },
+  "aiAnalysis": {
+    "message": "AI 분석"
+  },
+  "noDocsFound": {
+    "message": "EULA/ToS/개인정보 보호정책 문서를 찾을 수 없습니다."
+  },
+  "aiRisks": {
+    "message": "AI 위험"
+  },
+  "patterns": {
+    "message": "패턴"
+  },
+  "noRisksFound": {
+    "message": "명확한 위험이 발견되지 않았습니다"
+  },
+  "checkboxes": {
+    "message": "체크박스"
+  },
+  "btnSafeAutofill": {
+    "message": "안전한 자동 입력"
+  },
+  "btnAutoCookie": {
+    "message": "쿠키 자동 차단"
+  },
+  "finalClick": {
+    "message": "마지막 클릭은 당신의 몫!"
+  },
+  "filledCount": {
+    "message": "입력됨"
+  },
+  "noData": {
+    "message": "데이터 없음"
+  },
+  "processed": {
+    "message": "처리됨"
+  },
+  "kChars": {
+    "message": "K 문자"
+  },
+  "sectionSecurity": {
+    "message": "사이트 보안"
+  },
+  "virusTotal": {
+    "message": "VirusTotal"
+  },
+  "virusTotalDesc": {
+    "message": "70개+ 바이러스 백신으로 URL 검사 (무료 키)"
+  },
+  "virusTotalKey": {
+    "message": "VirusTotal API 키"
+  },
+  "virusTotalKeyHint": {
+    "message": "무료 키:"
+  },
+  "phishTank": {
+    "message": "PhishTank"
+  },
+  "phishTankDesc": {
+    "message": "피싱 데이터베이스 검사 (무료, 키 불필요)"
+  },
+  "urlHaus": {
+    "message": "URLhaus (abuse.ch)"
+  },
+  "urlHausDesc": {
+    "message": "악성 URL 데이터베이스 검사 (무료, 키 불필요)"
+  },
+  "domainAge": {
+    "message": "도메인 연령 분석 (WHOIS)"
+  },
+  "domainAgeDesc": {
+    "message": "새로 생성된 도메인 경고 (30일 미만)"
+  },
+  "formSecurity": {
+    "message": "폼 보안 검사"
+  },
+  "formSecurityDesc": {
+    "message": "로그인 폼이 다른 도메인으로 데이터를 보내면 차단"
+  },
+  "cryptoMiner": {
+    "message": "크립토마이너 스캔"
+  },
+  "cryptoMinerDesc": {
+    "message": "숨겨진 마이너 감지 및 차단 (Coinhive 등)"
+  },
+  "detectHiddenIframes": {
+    "message": "숨겨진 iframe"
+  },
+  "detectHiddenIframesDesc": {
+    "message": "보이지 않는 iframe 감지 및 제거 (클릭재킹, 맬웨어)"
+  },
+  "detectObfuscatedJS": {
+    "message": "난독화 JS"
+  },
+  "detectObfuscatedJSDesc": {
+    "message": "인코딩된 스크립트 휴리스틱 탐지 (eval/atob)"
+  },
+  "detectRedirects": {
+    "message": "리다이렉트 체인"
+  },
+  "detectRedirectsDesc": {
+    "message": "다른 도메인을 통한 의심스러운 리다이렉트 경고"
+  },
+  "detectExtInstall": {
+    "message": "확장 프로그램 설치"
+  },
+  "detectExtInstallDesc": {
+    "message": "브라우저 확장 프로그램 설치를 유도하는 시도 감지"
+  },
+  "tabReport": {
+    "message": "Report"
+  },
+  "reportDesc": {
+    "message": "Screenshot and bug report"
+  },
+  "reportPlaceholder": {
+    "message": "Describe the problem..."
+  },
+  "reportScreenshot": {
+    "message": "Screenshot"
+  },
+  "reportSend": {
+    "message": "Send"
+  },
+  "reportSent": {
+    "message": "Sent. Thank you!"
+  },
+  "reportError": {
+    "message": "Send failed"
+  }
+}

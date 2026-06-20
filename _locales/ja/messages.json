@@ -1,0 +1,407 @@
+{
+  "extName": {
+    "message": "MiniShield"
+  },
+  "extDescription": {
+    "message": "広告なしのマルチツール。EULA/ToS/プライバシーポリシーの分析と安全な自動入力"
+  },
+  "popupTitle": {
+    "message": "MiniShield"
+  },
+  "popupSlogan": {
+    "message": "広告なしのマルチツール"
+  },
+  "btnScan": {
+    "message": "サイトをスキャン"
+  },
+  "btnCookies": {
+    "message": "Cookieをブロック"
+  },
+  "btnSettings": {
+    "message": "すべての設定"
+  },
+  "toggleAutoScan": {
+    "message": "自動スキャン"
+  },
+  "toggleAI": {
+    "message": "AI分析 (Gemini)"
+  },
+  "toggleAutoFill": {
+    "message": "自動入力"
+  },
+  "settingsTitle": {
+    "message": "設定"
+  },
+  "sectionProfile": {
+    "message": "自動入力プロファイル"
+  },
+  "sectionAPI": {
+    "message": "Gemini API"
+  },
+  "sectionAnalysis": {
+    "message": "分析"
+  },
+  "sectionCookiePolicy": {
+    "message": "Cookieポリシー"
+  },
+  "sectionProtection": {
+    "message": "保護"
+  },
+  "sectionInterface": {
+    "message": "インターフェース"
+  },
+  "sectionWhitelist": {
+    "message": "ホワイトリスト"
+  },
+  "sectionHistory": {
+    "message": "分析履歴"
+  },
+  "firstName": {
+    "message": "名"
+  },
+  "lastName": {
+    "message": "姓"
+  },
+  "email": {
+    "message": "メール"
+  },
+  "phone": {
+    "message": "電話番号"
+  },
+  "username": {
+    "message": "ユーザー名"
+  },
+  "birthDate": {
+    "message": "生年月日"
+  },
+  "organization": {
+    "message": "組織"
+  },
+  "address": {
+    "message": "住所"
+  },
+  "country": {
+    "message": "国"
+  },
+  "city": {
+    "message": "都市"
+  },
+  "apiKey": {
+    "message": "APIキー"
+  },
+  "apiKeyHint": {
+    "message": "取得:"
+  },
+  "autoScan": {
+    "message": "自動スキャン"
+  },
+  "autoScanDesc": {
+    "message": "ページを開いた時に分析"
+  },
+  "autoScanAll": {
+    "message": "全サイトをスキャン"
+  },
+  "autoScanAllDesc": {
+    "message": "全サイトへの権限が必要"
+  },
+  "useAI": {
+    "message": "AI分析 (Gemini)"
+  },
+  "useAIDesc": {
+    "message": "AIによる詳細分析"
+  },
+  "autoFill": {
+    "message": "自動入力"
+  },
+  "autoFillDesc": {
+    "message": "プロファイルからフォーム入力を提案"
+  },
+  "riskLevel": {
+    "message": "リスクレベル"
+  },
+  "riskAll": {
+    "message": "すべて"
+  },
+  "riskHigh": {
+    "message": "高以上"
+  },
+  "riskCritical": {
+    "message": "重大のみ"
+  },
+  "smartCookieBlock": {
+    "message": "スマートCookieブロック"
+  },
+  "smartCookieBlockDesc": {
+    "message": "カテゴリ別に分類とブロック"
+  },
+  "catNecessary": {
+    "message": "必要"
+  },
+  "catNecessaryDesc": {
+    "message": "認証、カート、セキュリティ"
+  },
+  "catFunctional": {
+    "message": "機能的"
+  },
+  "catFunctionalDesc": {
+    "message": "言語、テーマ、UI設定"
+  },
+  "catAnalytics": {
+    "message": "分析"
+  },
+  "catAnalyticsDesc": {
+    "message": "Google Analytics、Yandex Metrikaなど"
+  },
+  "catAdvertising": {
+    "message": "広告"
+  },
+  "catAdvertisingDesc": {
+    "message": "ターゲティング、リターゲティング、広告ネットワーク"
+  },
+  "catAllowed": {
+    "message": "許可済み"
+  },
+  "antiTracker": {
+    "message": "アンチトラッカー"
+  },
+  "antiTrackerDesc": {
+    "message": "トラッキングスクリプトをブロック"
+  },
+  "socialBlock": {
+    "message": "ソーシャルメディアブロック"
+  },
+  "socialBlockDesc": {
+    "message": "ソーシャルウィジェットによるトラッキングをブロック"
+  },
+  "notifications": {
+    "message": "通知"
+  },
+  "notificationsDesc": {
+    "message": "検出されたリスクを通知"
+  },
+  "showBadge": {
+    "message": "バッジを表示"
+  },
+  "showBadgeDesc": {
+    "message": "ページ上のフローティングシールドボタン"
+  },
+  "whitelistBuiltIn": {
+    "message": "組み込み: Google, Bing, Yandex, DuckDuckGo, Yahoo, YouTube"
+  },
+  "whitelistAdd": {
+    "message": "追加"
+  },
+  "historyClear": {
+    "message": "履歴をクリア"
+  },
+  "historyEmpty": {
+    "message": "データなし"
+  },
+  "saved": {
+    "message": "保存済み"
+  },
+  "findings": {
+    "message": "件の発見"
+  },
+  "panelTitle": {
+    "message": "リスク分析"
+  },
+  "scanning": {
+    "message": "スキャン中..."
+  },
+  "noRisks": {
+    "message": "リスクは見つかりませんでした"
+  },
+  "rateLimitMsg": {
+    "message": "APIレート制限に達しました。しばらくお待ちください。"
+  },
+  "socialBlocked": {
+    "message": "ソーシャルウィジェットをブロック"
+  },
+  "errorTrackBlock": {
+    "message": "エラートラッカーのブロック"
+  },
+  "errorTrackBlockDesc": {
+    "message": "Sentry, Bugsnag, Rollbar, LogRocket, TrackJS, Raygun など"
+  },
+  "btnAutoFill": {
+    "message": "自動入力"
+  },
+  "safeBrowsing": {
+    "message": "Safe Browsing API チェック"
+  },
+  "safeBrowsingDesc": {
+    "message": "Google Safe Browsing API で各サイトをチェック"
+  },
+  "safeBrowsingKey": {
+    "message": "Safe Browsing APIキー"
+  },
+  "safeBrowsingKeyHint": {
+    "message": "キーを作成:"
+  },
+  "safeBrowsingKeyHint2": {
+    "message": "Google Cloud Consoleで'Safe Browsing API'を有効にしてください"
+  },
+  "sevCritical": {
+    "message": "重大"
+  },
+  "sevHigh": {
+    "message": "高"
+  },
+  "sevMedium": {
+    "message": "中"
+  },
+  "sevLow": {
+    "message": "低"
+  },
+  "readOriginal": {
+    "message": "原文を読む →"
+  },
+  "scoreLow": {
+    "message": "低リスク"
+  },
+  "scoreMedium": {
+    "message": "中リスク"
+  },
+  "scoreHigh": {
+    "message": "高リスク"
+  },
+  "rateLimitPanel": {
+    "message": "APIリミット到達 - AI分析が一時的に利用不可。"
+  },
+  "cookieBannerDone": {
+    "message": "Cookieバナー処理済み"
+  },
+  "trackersCount": {
+    "message": "トラッカー"
+  },
+  "aiAnalysis": {
+    "message": "AI分析"
+  },
+  "noDocsFound": {
+    "message": "EULA/利用規約/プライバシーポリシーが見つかりません。"
+  },
+  "aiRisks": {
+    "message": "AIリスク"
+  },
+  "patterns": {
+    "message": "パターン"
+  },
+  "noRisksFound": {
+    "message": "明らかなリスクは見つかりませんでした"
+  },
+  "checkboxes": {
+    "message": "チェックボックス"
+  },
+  "btnSafeAutofill": {
+    "message": "安全な自動入力"
+  },
+  "btnAutoCookie": {
+    "message": "Cookie自動ブロック"
+  },
+  "finalClick": {
+    "message": "最終クリックはあなた次第！"
+  },
+  "filledCount": {
+    "message": "入力済み"
+  },
+  "noData": {
+    "message": "データなし"
+  },
+  "processed": {
+    "message": "処理済み"
+  },
+  "kChars": {
+    "message": "K文字"
+  },
+  "sectionSecurity": {
+    "message": "サイトセキュリティ"
+  },
+  "virusTotal": {
+    "message": "VirusTotal"
+  },
+  "virusTotalDesc": {
+    "message": "70以上のウイルス対策エンジンでURL検査（無料キー）"
+  },
+  "virusTotalKey": {
+    "message": "VirusTotal APIキー"
+  },
+  "virusTotalKeyHint": {
+    "message": "無料キー："
+  },
+  "phishTank": {
+    "message": "PhishTank"
+  },
+  "phishTankDesc": {
+    "message": "フィッシングデータベースで検査（無料、キー不要）"
+  },
+  "urlHaus": {
+    "message": "URLhaus (abuse.ch)"
+  },
+  "urlHausDesc": {
+    "message": "マルウェアURLデータベースで検査（無料、キー不要）"
+  },
+  "domainAge": {
+    "message": "ドメイン年齢分析 (WHOIS)"
+  },
+  "domainAgeDesc": {
+    "message": "新規作成ドメインを警告（30日未満）"
+  },
+  "formSecurity": {
+    "message": "フォームセキュリティチェック"
+  },
+  "formSecurityDesc": {
+    "message": "ログインフォームが別ドメインにデータを送信する場合ブロック"
+  },
+  "cryptoMiner": {
+    "message": "クリプトマイナースキャン"
+  },
+  "cryptoMinerDesc": {
+    "message": "隠しマイナーの検出とブロック（Coinhive等）"
+  },
+  "detectHiddenIframes": {
+    "message": "非表示iframe"
+  },
+  "detectHiddenIframesDesc": {
+    "message": "不可視iframeの検出と削除（クリックジャッキング、マルウェア）"
+  },
+  "detectObfuscatedJS": {
+    "message": "難読化JS"
+  },
+  "detectObfuscatedJSDesc": {
+    "message": "エンコードされたスクリプトのヒューリスティック検出"
+  },
+  "detectRedirects": {
+    "message": "リダイレクトチェーン"
+  },
+  "detectRedirectsDesc": {
+    "message": "異なるドメインへの不審なリダイレクト警告"
+  },
+  "detectExtInstall": {
+    "message": "拡張機能のインストール"
+  },
+  "detectExtInstallDesc": {
+    "message": "ブラウザ拡張機能のインストールを誘導する試みを検出"
+  },
+  "tabReport": {
+    "message": "Report"
+  },
+  "reportDesc": {
+    "message": "Screenshot and bug report"
+  },
+  "reportPlaceholder": {
+    "message": "Describe the problem..."
+  },
+  "reportScreenshot": {
+    "message": "Screenshot"
+  },
+  "reportSend": {
+    "message": "Send"
+  },
+  "reportSent": {
+    "message": "Sent. Thank you!"
+  },
+  "reportError": {
+    "message": "Send failed"
+  }
+}

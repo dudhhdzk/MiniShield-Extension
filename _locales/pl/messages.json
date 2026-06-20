@@ -1,0 +1,407 @@
+{
+  "extName": {
+    "message": "MiniShield"
+  },
+  "extDescription": {
+    "message": "Wielofunkcyjne narzędzie bez reklam. Analiza EULA/ToS/Polityki prywatności i bezpieczne autouzupełnianie"
+  },
+  "popupTitle": {
+    "message": "MiniShield"
+  },
+  "popupSlogan": {
+    "message": "Wielofunkcyjne narzędzie bez reklam"
+  },
+  "btnScan": {
+    "message": "Sprawdź stronę"
+  },
+  "btnCookies": {
+    "message": "Zablokuj ciasteczka"
+  },
+  "btnSettings": {
+    "message": "Wszystkie ustawienia"
+  },
+  "toggleAutoScan": {
+    "message": "Automatyczne skanowanie"
+  },
+  "toggleAI": {
+    "message": "Analiza AI (Gemini)"
+  },
+  "toggleAutoFill": {
+    "message": "Autouzupełnianie"
+  },
+  "settingsTitle": {
+    "message": "Ustawienia"
+  },
+  "sectionProfile": {
+    "message": "Profil do autouzupełniania"
+  },
+  "sectionAPI": {
+    "message": "Gemini API"
+  },
+  "sectionAnalysis": {
+    "message": "Analiza"
+  },
+  "sectionCookiePolicy": {
+    "message": "Polityka ciasteczek"
+  },
+  "sectionProtection": {
+    "message": "Ochrona"
+  },
+  "sectionInterface": {
+    "message": "Interfejs"
+  },
+  "sectionWhitelist": {
+    "message": "Biała lista"
+  },
+  "sectionHistory": {
+    "message": "Historia analiz"
+  },
+  "firstName": {
+    "message": "Imię"
+  },
+  "lastName": {
+    "message": "Nazwisko"
+  },
+  "email": {
+    "message": "Email"
+  },
+  "phone": {
+    "message": "Telefon"
+  },
+  "username": {
+    "message": "Login"
+  },
+  "birthDate": {
+    "message": "Data urodzenia"
+  },
+  "organization": {
+    "message": "Organizacja"
+  },
+  "address": {
+    "message": "Adres"
+  },
+  "country": {
+    "message": "Kraj"
+  },
+  "city": {
+    "message": "Miasto"
+  },
+  "apiKey": {
+    "message": "Klucz API"
+  },
+  "apiKeyHint": {
+    "message": "Pobierz:"
+  },
+  "autoScan": {
+    "message": "Automatyczne skanowanie"
+  },
+  "autoScanDesc": {
+    "message": "Analizuj przy otwarciu strony"
+  },
+  "autoScanAll": {
+    "message": "Skanuj wszystkie strony"
+  },
+  "autoScanAllDesc": {
+    "message": "Wymaga uprawnień do wszystkich stron"
+  },
+  "useAI": {
+    "message": "Analiza AI (Gemini)"
+  },
+  "useAIDesc": {
+    "message": "Głęboka analiza dokumentów przez AI"
+  },
+  "autoFill": {
+    "message": "Autouzupełnianie"
+  },
+  "autoFillDesc": {
+    "message": "Proponuj wypełnianie formularzy z profilu"
+  },
+  "riskLevel": {
+    "message": "Poziom ryzyka"
+  },
+  "riskAll": {
+    "message": "Wszystkie"
+  },
+  "riskHigh": {
+    "message": "Wysokie+"
+  },
+  "riskCritical": {
+    "message": "Tylko krytyczne"
+  },
+  "smartCookieBlock": {
+    "message": "Inteligentne blokowanie ciasteczek"
+  },
+  "smartCookieBlockDesc": {
+    "message": "Klasyfikacja i blokowanie według kategorii"
+  },
+  "catNecessary": {
+    "message": "Niezbędne"
+  },
+  "catNecessaryDesc": {
+    "message": "Autoryzacja, koszyk, bezpieczeństwo"
+  },
+  "catFunctional": {
+    "message": "Funkcjonalne"
+  },
+  "catFunctionalDesc": {
+    "message": "Język, motyw, ustawienia UI"
+  },
+  "catAnalytics": {
+    "message": "Analityczne"
+  },
+  "catAnalyticsDesc": {
+    "message": "Google Analytics, Yandex Metrika itp."
+  },
+  "catAdvertising": {
+    "message": "Reklamowe"
+  },
+  "catAdvertisingDesc": {
+    "message": "Targetowanie, retargeting, sieci reklamowe"
+  },
+  "catAllowed": {
+    "message": "Dozwolone"
+  },
+  "antiTracker": {
+    "message": "Anty-tracker"
+  },
+  "antiTrackerDesc": {
+    "message": "Blokuj skrypty śledzące"
+  },
+  "socialBlock": {
+    "message": "Blokowanie mediów społecznościowych"
+  },
+  "socialBlockDesc": {
+    "message": "Blokuj śledzenie przez widżety społecznościowe"
+  },
+  "notifications": {
+    "message": "Powiadomienia"
+  },
+  "notificationsDesc": {
+    "message": "Powiadamiaj o wykrytych ryzykach"
+  },
+  "showBadge": {
+    "message": "Pokaż odznakę"
+  },
+  "showBadgeDesc": {
+    "message": "Pływający przycisk tarczy na stronach"
+  },
+  "whitelistBuiltIn": {
+    "message": "Wbudowane: Google, Bing, Yandex, DuckDuckGo, Yahoo, YouTube"
+  },
+  "whitelistAdd": {
+    "message": "Dodaj"
+  },
+  "historyClear": {
+    "message": "Wyczyść historię"
+  },
+  "historyEmpty": {
+    "message": "Brak danych"
+  },
+  "saved": {
+    "message": "Zapisano"
+  },
+  "findings": {
+    "message": "znalezisk"
+  },
+  "panelTitle": {
+    "message": "Analiza ryzyka"
+  },
+  "scanning": {
+    "message": "Skanowanie..."
+  },
+  "noRisks": {
+    "message": "Nie znaleziono ryzyk"
+  },
+  "rateLimitMsg": {
+    "message": "Limit API osiągnięty. Poczekaj minutę."
+  },
+  "socialBlocked": {
+    "message": "widżetów społecznościowych zablokowanych"
+  },
+  "errorTrackBlock": {
+    "message": "Blokowanie śledzenia błędów"
+  },
+  "errorTrackBlockDesc": {
+    "message": "Sentry, Bugsnag, Rollbar, LogRocket, TrackJS, Raygun itp."
+  },
+  "btnAutoFill": {
+    "message": "Autouzupełnianie"
+  },
+  "safeBrowsing": {
+    "message": "Sprawdzanie Safe Browsing API"
+  },
+  "safeBrowsingDesc": {
+    "message": "Sprawdzaj każdą stronę przez Google Safe Browsing API"
+  },
+  "safeBrowsingKey": {
+    "message": "Klucz API Safe Browsing"
+  },
+  "safeBrowsingKeyHint": {
+    "message": "Utwórz klucz:"
+  },
+  "safeBrowsingKeyHint2": {
+    "message": "Włącz 'Safe Browsing API' w Google Cloud Console"
+  },
+  "sevCritical": {
+    "message": "KRYTYCZNY"
+  },
+  "sevHigh": {
+    "message": "WYSOKI"
+  },
+  "sevMedium": {
+    "message": "ŚREDNI"
+  },
+  "sevLow": {
+    "message": "NISKI"
+  },
+  "readOriginal": {
+    "message": "Czytaj oryginał →"
+  },
+  "scoreLow": {
+    "message": "Niskie ryzyko"
+  },
+  "scoreMedium": {
+    "message": "Średnie ryzyko"
+  },
+  "scoreHigh": {
+    "message": "Wysokie ryzyko"
+  },
+  "rateLimitPanel": {
+    "message": "Limit API osiągnięty - analiza AI tymczasowo niedostępna."
+  },
+  "cookieBannerDone": {
+    "message": "Baner cookie obsłużony"
+  },
+  "trackersCount": {
+    "message": "Śledzących"
+  },
+  "aiAnalysis": {
+    "message": "Analiza AI"
+  },
+  "noDocsFound": {
+    "message": "Nie znaleziono dokumentów EULA/ToS/Polityki prywatności."
+  },
+  "aiRisks": {
+    "message": "Ryzyka AI"
+  },
+  "patterns": {
+    "message": "Wzorce"
+  },
+  "noRisksFound": {
+    "message": "Nie znaleziono oczywistych zagrożeń"
+  },
+  "checkboxes": {
+    "message": "Pola wyboru"
+  },
+  "btnSafeAutofill": {
+    "message": "Bezpieczne autouzupełnianie"
+  },
+  "btnAutoCookie": {
+    "message": "Automatyczne blokowanie ciasteczek"
+  },
+  "finalClick": {
+    "message": "Ostatnie kliknięcie należy do ciebie!"
+  },
+  "filledCount": {
+    "message": "Wypełniono"
+  },
+  "noData": {
+    "message": "Brak danych"
+  },
+  "processed": {
+    "message": "Przetworzono"
+  },
+  "kChars": {
+    "message": "K znaków"
+  },
+  "sectionSecurity": {
+    "message": "Bezpieczeństwo stron"
+  },
+  "virusTotal": {
+    "message": "VirusTotal"
+  },
+  "virusTotalDesc": {
+    "message": "Sprawdzenie URL 70+ antywirusami (darmowy klucz)"
+  },
+  "virusTotalKey": {
+    "message": "Klucz API VirusTotal"
+  },
+  "virusTotalKeyHint": {
+    "message": "Darmowy klucz:"
+  },
+  "phishTank": {
+    "message": "PhishTank"
+  },
+  "phishTankDesc": {
+    "message": "Sprawdzenie w bazie phishingu (bezpłatnie, bez klucza)"
+  },
+  "urlHaus": {
+    "message": "URLhaus (abuse.ch)"
+  },
+  "urlHausDesc": {
+    "message": "Sprawdzenie w bazie złośliwych URL (bezpłatnie, bez klucza)"
+  },
+  "domainAge": {
+    "message": "Analiza wieku domeny (WHOIS)"
+  },
+  "domainAgeDesc": {
+    "message": "Ostrzegaj o nowo utworzonych domenach (< 30 dni)"
+  },
+  "formSecurity": {
+    "message": "Sprawdzanie bezpieczenstwa formularzy"
+  },
+  "formSecurityDesc": {
+    "message": "Blokuj jesli formularz logowania wysyla dane na inna domene"
+  },
+  "cryptoMiner": {
+    "message": "Skanowanie kryptominerow"
+  },
+  "cryptoMinerDesc": {
+    "message": "Wykrywanie i blokowanie ukrytych minerow (Coinhive itp.)"
+  },
+  "detectHiddenIframes": {
+    "message": "Ukryte iframe"
+  },
+  "detectHiddenIframesDesc": {
+    "message": "Wykrywanie i usuwanie niewidocznych iframe (clickjacking, malware)"
+  },
+  "detectObfuscatedJS": {
+    "message": "Zaciemniony JS"
+  },
+  "detectObfuscatedJSDesc": {
+    "message": "Heurystyka dla zakodowanych skryptow (eval/atob, fromCharCode)"
+  },
+  "detectRedirects": {
+    "message": "Lancuchy przekierowan"
+  },
+  "detectRedirectsDesc": {
+    "message": "Ostrzezenie o podejrzanych przekierowaniach przez rozne domeny"
+  },
+  "detectExtInstall": {
+    "message": "Instalacja rozszerzen"
+  },
+  "detectExtInstallDesc": {
+    "message": "Wykrywanie prob sprowokowania instalacji rozszerzen przegladarki"
+  },
+  "tabReport": {
+    "message": "Zgloszenie"
+  },
+  "reportDesc": {
+    "message": "Zrob zrzut ekranu i wyslij raport o bledzie"
+  },
+  "reportPlaceholder": {
+    "message": "Opisz problem..."
+  },
+  "reportScreenshot": {
+    "message": "Zrzut"
+  },
+  "reportSend": {
+    "message": "Wyslij"
+  },
+  "reportSent": {
+    "message": "Raport wyslany. Dziekujemy!"
+  },
+  "reportError": {
+    "message": "Blad wysylania"
+  }
+}

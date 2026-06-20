@@ -1,0 +1,63 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "version": "3.3.0",
+  "description": "__MSG_extDescription__",
+  "default_locale": "ru",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "notifications",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*",
+    "https://safebrowsing.googleapis.com/*",
+    "https://www.virustotal.com/*",
+    "https://checkurl.phishtank.com/*",
+    "https://urlhaus-api.abuse.ch/*",
+    "https://rdap.org/*",
+    "https://pastebin.com/*",
+    "https://api.mail.tm/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "MiniShield - мультитул без рекламы"
+  },
+  "options_page": "options.html",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "styles/content.css",
+        "images/pig_safe.png",
+        "images/logo.png"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "optional_host_permissions": [
+    "<all_urls>"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "optional_permissions": [
+    "<all_urls>"
+  ]
+}

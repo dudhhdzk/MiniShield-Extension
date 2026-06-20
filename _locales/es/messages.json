@@ -1,0 +1,407 @@
+{
+  "extName": {
+    "message": "MiniShield"
+  },
+  "extDescription": {
+    "message": "Herramienta múltiple sin anuncios. Análisis de EULA/ToS/Política de privacidad y autocompletado seguro"
+  },
+  "popupTitle": {
+    "message": "MiniShield"
+  },
+  "popupSlogan": {
+    "message": "Herramienta múltiple sin anuncios"
+  },
+  "btnScan": {
+    "message": "Analizar sitio"
+  },
+  "btnCookies": {
+    "message": "Bloquear cookies"
+  },
+  "btnSettings": {
+    "message": "Todos los ajustes"
+  },
+  "toggleAutoScan": {
+    "message": "Escaneo automático"
+  },
+  "toggleAI": {
+    "message": "Análisis IA (Gemini)"
+  },
+  "toggleAutoFill": {
+    "message": "Autocompletado"
+  },
+  "settingsTitle": {
+    "message": "Ajustes"
+  },
+  "sectionProfile": {
+    "message": "Perfil para autocompletado"
+  },
+  "sectionAPI": {
+    "message": "Gemini API"
+  },
+  "sectionAnalysis": {
+    "message": "Análisis"
+  },
+  "sectionCookiePolicy": {
+    "message": "Política de cookies"
+  },
+  "sectionProtection": {
+    "message": "Protección"
+  },
+  "sectionInterface": {
+    "message": "Interfaz"
+  },
+  "sectionWhitelist": {
+    "message": "Lista blanca"
+  },
+  "sectionHistory": {
+    "message": "Historial de análisis"
+  },
+  "firstName": {
+    "message": "Nombre"
+  },
+  "lastName": {
+    "message": "Apellido"
+  },
+  "email": {
+    "message": "Correo"
+  },
+  "phone": {
+    "message": "Teléfono"
+  },
+  "username": {
+    "message": "Usuario"
+  },
+  "birthDate": {
+    "message": "Fecha de nacimiento"
+  },
+  "organization": {
+    "message": "Organización"
+  },
+  "address": {
+    "message": "Dirección"
+  },
+  "country": {
+    "message": "País"
+  },
+  "city": {
+    "message": "Ciudad"
+  },
+  "apiKey": {
+    "message": "Clave API"
+  },
+  "apiKeyHint": {
+    "message": "Obtener:"
+  },
+  "autoScan": {
+    "message": "Escaneo automático"
+  },
+  "autoScanDesc": {
+    "message": "Analizar al abrir la página"
+  },
+  "autoScanAll": {
+    "message": "Escanear todos los sitios"
+  },
+  "autoScanAllDesc": {
+    "message": "Requiere permiso para todos los sitios"
+  },
+  "useAI": {
+    "message": "Análisis IA (Gemini)"
+  },
+  "useAIDesc": {
+    "message": "Análisis profundo con IA"
+  },
+  "autoFill": {
+    "message": "Autocompletado"
+  },
+  "autoFillDesc": {
+    "message": "Sugerir llenar formularios del perfil"
+  },
+  "riskLevel": {
+    "message": "Nivel de riesgo"
+  },
+  "riskAll": {
+    "message": "Todos"
+  },
+  "riskHigh": {
+    "message": "Alto+"
+  },
+  "riskCritical": {
+    "message": "Solo críticos"
+  },
+  "smartCookieBlock": {
+    "message": "Bloqueo inteligente de cookies"
+  },
+  "smartCookieBlockDesc": {
+    "message": "Clasificación y bloqueo por categorías"
+  },
+  "catNecessary": {
+    "message": "Necesarias"
+  },
+  "catNecessaryDesc": {
+    "message": "Auth, carrito, seguridad"
+  },
+  "catFunctional": {
+    "message": "Funcionales"
+  },
+  "catFunctionalDesc": {
+    "message": "Idioma, tema, ajustes de UI"
+  },
+  "catAnalytics": {
+    "message": "Analíticas"
+  },
+  "catAnalyticsDesc": {
+    "message": "Google Analytics, Yandex Metrika, etc."
+  },
+  "catAdvertising": {
+    "message": "Publicitarias"
+  },
+  "catAdvertisingDesc": {
+    "message": "Segmentación, retargeting, redes publicitarias"
+  },
+  "catAllowed": {
+    "message": "Permitidas"
+  },
+  "antiTracker": {
+    "message": "Anti-rastreador"
+  },
+  "antiTrackerDesc": {
+    "message": "Bloquear scripts de rastreo"
+  },
+  "socialBlock": {
+    "message": "Bloqueo de redes sociales"
+  },
+  "socialBlockDesc": {
+    "message": "Bloquear rastreo a través de widgets sociales"
+  },
+  "notifications": {
+    "message": "Notificaciones"
+  },
+  "notificationsDesc": {
+    "message": "Notificar sobre riesgos detectados"
+  },
+  "showBadge": {
+    "message": "Mostrar insignia"
+  },
+  "showBadgeDesc": {
+    "message": "Botón escudo flotante en páginas"
+  },
+  "whitelistBuiltIn": {
+    "message": "Integrados: Google, Bing, Yandex, DuckDuckGo, Yahoo, YouTube"
+  },
+  "whitelistAdd": {
+    "message": "Agregar"
+  },
+  "historyClear": {
+    "message": "Borrar historial"
+  },
+  "historyEmpty": {
+    "message": "Aún no hay datos"
+  },
+  "saved": {
+    "message": "Guardado"
+  },
+  "findings": {
+    "message": "hallazgos"
+  },
+  "panelTitle": {
+    "message": "Análisis de riesgos"
+  },
+  "scanning": {
+    "message": "Escaneando..."
+  },
+  "noRisks": {
+    "message": "No se encontraron riesgos"
+  },
+  "rateLimitMsg": {
+    "message": "Límite de API alcanzado. Espere un minuto."
+  },
+  "socialBlocked": {
+    "message": "widgets sociales bloqueados"
+  },
+  "errorTrackBlock": {
+    "message": "Bloqueo de rastreadores de errores"
+  },
+  "errorTrackBlockDesc": {
+    "message": "Sentry, Bugsnag, Rollbar, LogRocket, TrackJS, Raygun etc."
+  },
+  "btnAutoFill": {
+    "message": "Autocompletar"
+  },
+  "safeBrowsing": {
+    "message": "Comprobación Safe Browsing API"
+  },
+  "safeBrowsingDesc": {
+    "message": "Comprobar cada sitio mediante Google Safe Browsing API"
+  },
+  "safeBrowsingKey": {
+    "message": "Clave API Safe Browsing"
+  },
+  "safeBrowsingKeyHint": {
+    "message": "Crear clave:"
+  },
+  "safeBrowsingKeyHint2": {
+    "message": "Active 'Safe Browsing API' en Google Cloud Console"
+  },
+  "sevCritical": {
+    "message": "CRÍTICO"
+  },
+  "sevHigh": {
+    "message": "ALTO"
+  },
+  "sevMedium": {
+    "message": "MEDIO"
+  },
+  "sevLow": {
+    "message": "BAJO"
+  },
+  "readOriginal": {
+    "message": "Leer original →"
+  },
+  "scoreLow": {
+    "message": "Riesgo bajo"
+  },
+  "scoreMedium": {
+    "message": "Riesgo medio"
+  },
+  "scoreHigh": {
+    "message": "Riesgo alto"
+  },
+  "rateLimitPanel": {
+    "message": "Límite API alcanzado - Análisis IA no disponible temporalmente."
+  },
+  "cookieBannerDone": {
+    "message": "Banner de cookies procesado"
+  },
+  "trackersCount": {
+    "message": "Rastreadores"
+  },
+  "aiAnalysis": {
+    "message": "Análisis IA"
+  },
+  "noDocsFound": {
+    "message": "No se encontraron documentos EULA/ToS/Política de privacidad."
+  },
+  "aiRisks": {
+    "message": "Riesgos IA"
+  },
+  "patterns": {
+    "message": "Patrones"
+  },
+  "noRisksFound": {
+    "message": "No se encontraron riesgos evidentes"
+  },
+  "checkboxes": {
+    "message": "Casillas"
+  },
+  "btnSafeAutofill": {
+    "message": "Autocompletado seguro"
+  },
+  "btnAutoCookie": {
+    "message": "Bloquear cookies auto"
+  },
+  "finalClick": {
+    "message": "¡El clic final es tuyo!"
+  },
+  "filledCount": {
+    "message": "Completado"
+  },
+  "noData": {
+    "message": "Sin datos"
+  },
+  "processed": {
+    "message": "Procesado"
+  },
+  "kChars": {
+    "message": "K caracteres"
+  },
+  "sectionSecurity": {
+    "message": "Seguridad de sitios"
+  },
+  "virusTotal": {
+    "message": "VirusTotal"
+  },
+  "virusTotalDesc": {
+    "message": "Verificación URL con 70+ antivirus (clave gratuita)"
+  },
+  "virusTotalKey": {
+    "message": "Clave API VirusTotal"
+  },
+  "virusTotalKeyHint": {
+    "message": "Clave gratuita:"
+  },
+  "phishTank": {
+    "message": "PhishTank"
+  },
+  "phishTankDesc": {
+    "message": "Verificación en base de phishing (gratis, sin clave)"
+  },
+  "urlHaus": {
+    "message": "URLhaus (abuse.ch)"
+  },
+  "urlHausDesc": {
+    "message": "Verificación en base de URLs maliciosas (gratis, sin clave)"
+  },
+  "domainAge": {
+    "message": "Analisis de edad del dominio (WHOIS)"
+  },
+  "domainAgeDesc": {
+    "message": "Advertir sobre dominios recien creados (< 30 dias)"
+  },
+  "formSecurity": {
+    "message": "Verificacion de seguridad de formularios"
+  },
+  "formSecurityDesc": {
+    "message": "Bloquear si el formulario de login envia datos a otro dominio"
+  },
+  "cryptoMiner": {
+    "message": "Escaneo de criptomineros"
+  },
+  "cryptoMinerDesc": {
+    "message": "Deteccion y bloqueo de mineros ocultos (Coinhive etc.)"
+  },
+  "detectHiddenIframes": {
+    "message": "Iframes ocultos"
+  },
+  "detectHiddenIframesDesc": {
+    "message": "Detectar y eliminar iframes invisibles (clickjacking, malware)"
+  },
+  "detectObfuscatedJS": {
+    "message": "JS ofuscado"
+  },
+  "detectObfuscatedJSDesc": {
+    "message": "Heuristica para scripts codificados (eval/atob, fromCharCode)"
+  },
+  "detectRedirects": {
+    "message": "Cadenas de redirecciones"
+  },
+  "detectRedirectsDesc": {
+    "message": "Alerta sobre redirecciones sospechosas a traves de diferentes dominios"
+  },
+  "detectExtInstall": {
+    "message": "Instalacion de extensiones"
+  },
+  "detectExtInstallDesc": {
+    "message": "Detectar intentos de provocar la instalacion de extensiones del navegador"
+  },
+  "tabReport": {
+    "message": "Reporte"
+  },
+  "reportDesc": {
+    "message": "Toma una captura de pantalla y envia un informe de error"
+  },
+  "reportPlaceholder": {
+    "message": "Describe el problema..."
+  },
+  "reportScreenshot": {
+    "message": "Captura"
+  },
+  "reportSend": {
+    "message": "Enviar"
+  },
+  "reportSent": {
+    "message": "Reporte enviado. Gracias!"
+  },
+  "reportError": {
+    "message": "Error al enviar"
+  }
+}

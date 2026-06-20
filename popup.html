@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="ru" data-i18n-title="popupTitle">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 320px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background: #fff;
+        color: #111827;
+      }
+      .top {
+        background: linear-gradient(135deg, #2e7d32, #66bb6a);
+        padding: 16px 18px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .top svg {
+        flex-shrink: 0;
+      }
+      .top h1 {
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .top p {
+        font-size: 11px;
+        opacity: 0.85;
+        margin-top: 1px;
+      }
+      .body {
+        padding: 14px 16px;
+      }
+      .btn {
+        width: 100%;
+        padding: 11px 0;
+        border: none;
+        border-radius: 10px;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        margin-bottom: 8px;
+        font-family: inherit;
+        transition:
+          background 0.2s,
+          transform 0.1s;
+      }
+      .btn:active {
+        transform: scale(0.98);
+      }
+      .btn-primary {
+        background: #2e7d32;
+        color: #fff;
+      }
+      .btn-primary:hover {
+        background: #388e3c;
+      }
+      .btn-secondary {
+        background: #f3f4f6;
+        color: #374151;
+        border: 1px solid #e5e7eb;
+      }
+      .btn-secondary:hover {
+        background: #e5e7eb;
+      }
+      .btn-warn {
+        background: #fff7ed;
+        color: #9a3412;
+        border: 1px solid #fed7aa;
+      }
+      .btn-warn:hover {
+        background: #ffedd5;
+      }
+      .divider {
+        height: 1px;
+        background: #e5e7eb;
+        margin: 12px 0;
+      }
+      .toggle-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 0;
+      }
+      .toggle-label {
+        font-size: 13px;
+        color: #374151;
+      }
+      .sw {
+        position: relative;
+        width: 40px;
+        height: 22px;
+      }
+      .sw input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      .sw-s {
+        position: absolute;
+        cursor: pointer;
+        inset: 0;
+        background: #d1d5db;
+        border-radius: 11px;
+        transition: 0.2s;
+      }
+      .sw-s:before {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        left: 3px;
+        top: 3px;
+        background: #fff;
+        border-radius: 50%;
+        transition: 0.2s;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+      }
+      .sw input:checked + .sw-s {
+        background: #2e7d32;
+      }
+      .sw input:checked + .sw-s:before {
+        transform: translateX(18px);
+      }
+      .link {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+        color: #2563eb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .link:hover {
+        text-decoration: underline;
+      }
+      .stats-strip {
+        display: flex;
+        gap: 0;
+        border-bottom: 1px solid #e5e7eb;
+        background: #f9fafb;
+      }
+      .stat-item {
+        flex: 1;
+        padding: 10px 0;
+        text-align: center;
+        border-right: 1px solid #e5e7eb;
+      }
+      .stat-item:last-child {
+        border-right: none;
+      }
+      .stat-num {
+        font-size: 20px;
+        font-weight: 800;
+        color: #2e7d32;
+        line-height: 1;
+        display: block;
+      }
+      .stat-num.danger {
+        color: #dc2626;
+      }
+      .stat-num.orange {
+        color: #d97706;
+      }
+      .stat-label {
+        font-size: 9px;
+        color: #9ca3af;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-top: 2px;
+        display: block;
+      }
+
+      /* ---- Рекламный блок ---- */
+      .ad-wrap {
+        border-top: 1px solid #e5e7eb;
+        background: #f9fafb;
+      }
+      .ad-toggle {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 7px 14px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 11px;
+        color: #9ca3af;
+      }
+      .ad-toggle:hover {
+        background: #f3f4f6;
+      }
+      .ad-toggle-icon {
+        font-size: 9px;
+        display: inline-block;
+        transform: rotate(0deg);
+      }
+      .ad-toggle-icon.open {
+        transform: rotate(180deg);
+      }
+      .ad-box {
+        overflow: hidden;
+        max-height: 0;
+      }
+      .ad-box.open {
+        max-height: 260px;
+      }
+      .ad-inner {
+        margin: 0 14px 10px;
+        padding: 10px 12px;
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        font-size: 12px;
+        color: #374151;
+        line-height: 1.5;
+        min-height: 36px;
+        position: relative;
+      }
+      .ad-inner a {
+        color: #2e7d32;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .ad-inner a:hover {
+        text-decoration: underline;
+      }
+      .ad-loading {
+        color: #9ca3af;
+        font-style: italic;
+      }
+      .ad-err {
+        color: #d1d5db;
+        font-size: 11px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <img
+        src="images/logo.png"
+        width="32"
+        height="32"
+        style="border-radius: 6px; flex-shrink: 0"
+        alt="MiniShield"
+      />
+      <div>
+        <h1 data-i18n="popupTitle">MiniShield</h1>
+        <p data-i18n="popupSlogan">Мультитул без рекламы</p>
+      </div>
+    </div>
+    <div class="stats-strip">
+      <div class="stat-item">
+        <span class="stat-num" id="stat-trackers">—</span>
+        <span class="stat-label">Трекеры</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num orange" id="stat-cookies">—</span>
+        <span class="stat-label">Cookie</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num danger" id="stat-threats">—</span>
+        <span class="stat-label">Угрозы</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" id="stat-scans">—</span>
+        <span class="stat-label">Сканов</span>
+      </div>
+    </div>
+    <div class="body">
+      <button class="btn btn-primary" id="btn-autofill" data-i18n="btnAutoFill">
+        Автозаполнение
+      </button>
+      <button
+        class="btn btn-secondary"
+        id="btn-tempemail"
+        style="display: flex; align-items: center; justify-content: center; gap: 6px"
+      >
+        Временный email
+      </button>
+
+      <div
+        id="tempemail-panel"
+        style="
+          display: none;
+          background: #f0f9ff;
+          border: 1px solid #bae6fd;
+          border-radius: 10px;
+          padding: 10px 12px;
+          margin-bottom: 8px;
+          font-size: 12px;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 6px;
+            margin-bottom: 6px;
+          "
+        >
+          <span
+            id="tempemail-address"
+            style="
+              font-weight: 700;
+              color: #0369a1;
+              word-break: break-all;
+              flex: 1;
+              font-size: 11px;
+            "
+            >—</span
+          >
+          <button
+            id="tempemail-copy"
+            title="Копировать"
+            style="
+              background: none;
+              border: 1px solid #bae6fd;
+              border-radius: 6px;
+              padding: 2px 8px;
+              cursor: pointer;
+              font-size: 11px;
+              color: #0369a1;
+              white-space: nowrap;
+            "
+          >
+            Копировать
+          </button>
+        </div>
+        <div
+          id="tempemail-status"
+          style="color: #6b7280; min-height: 16px; margin-bottom: 6px"
+        ></div>
+        <div
+          id="tempemail-code-box"
+          style="
+            display: none;
+            background: #dcfce7;
+            border: 1px solid #86efac;
+            border-radius: 8px;
+            padding: 8px 10px;
+            margin-bottom: 6px;
+            text-align: center;
+          "
+        >
+          <span style="font-size: 11px; color: #15803d; font-weight: 600">Код подтверждения:</span
+          ><br />
+          <span
+            id="tempemail-code-value"
+            style="font-size: 22px; font-weight: 800; color: #15803d; letter-spacing: 3px"
+          ></span>
+        </div>
+        <div style="display: flex; gap: 6px">
+          <button
+            id="tempemail-poll"
+            style="
+              flex: 1;
+              padding: 5px;
+              font-size: 11px;
+              border-radius: 7px;
+              border: 1px solid #bae6fd;
+              background: #e0f2fe;
+              cursor: pointer;
+              color: #0369a1;
+              font-family: inherit;
+              font-weight: 600;
+            "
+          >
+            Проверить
+          </button>
+          <button
+            id="tempemail-clear"
+            style="
+              flex: 1;
+              padding: 5px;
+              font-size: 11px;
+              border-radius: 7px;
+              border: 1px solid #fca5a5;
+              background: #fef2f2;
+              cursor: pointer;
+              color: #b91c1c;
+              font-family: inherit;
+            "
+          >
+            Удалить
+          </button>
+        </div>
+      </div>
+      <button class="btn btn-primary" id="btn-scan" data-i18n="btnScan">Проверить сайт</button>
+      <button class="btn btn-warn" id="btn-cookies" data-i18n="btnCookies">
+        Заблокировать cookie
+      </button>
+      <button class="btn btn-secondary" id="btn-social" data-i18n="socialBlock">
+        Блокировка соцсетей
+      </button>
+      <div class="divider"></div>
+      <div class="toggle-row">
+        <span class="toggle-label" data-i18n="toggleAutoScan">Автосканирование</span
+        ><label class="sw"
+          ><input type="checkbox" id="t-autoScan" /><span class="sw-s"></span
+        ></label>
+      </div>
+      <div class="toggle-row">
+        <span class="toggle-label" data-i18n="toggleAI">ИИ-анализ (Gemini)</span
+        ><label class="sw"><input type="checkbox" id="t-useAI" /><span class="sw-s"></span></label>
+      </div>
+      <div
+        id="access-banner"
+        style="
+          margin: 8px 0 4px;
+          padding: 8px 12px;
+          border-radius: 8px;
+          font-size: 11px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 8px;
+        "
+      >
+        <span id="access-text"></span>
+        <button
+          id="access-btn"
+          style="
+            padding: 5px 12px;
+            border: none;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 600;
+            cursor: pointer;
+            white-space: nowrap;
+          "
+        ></button>
+      </div>
+      <a class="link" id="open-options" data-i18n="btnSettings">Все настройки</a>
+      <button
+        class="btn btn-secondary"
+        id="btn-report"
+        data-i18n="tabReport"
+        style="margin-top: 4px"
+      >
+        Сообщить о проблеме
+      </button>
+      <div id="report-panel" style="display: none; margin-top: 8px">
+        <div id="report-preview" style="display: none; margin-bottom: 8px">
+          <img
+            id="report-screenshot"
+            style="width: 100%; border-radius: 8px; border: 1px solid #e5e7eb"
+            alt="screenshot"
+          />
+        </div>
+        <textarea
+          id="report-text"
+          rows="3"
+          placeholder="Опишите проблему..."
+          data-i18n-placeholder="reportPlaceholder"
+          style="
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 13px;
+            font-family: inherit;
+            resize: none;
+            background: #f9fafb;
+            color: #111;
+            box-sizing: border-box;
+          "
+        ></textarea>
+        <div style="display: flex; gap: 8px; margin-top: 8px">
+          <button
+            id="report-screenshot-btn"
+            style="
+              flex: 1;
+              padding: 8px;
+              font-size: 12px;
+              border-radius: 8px;
+              border: 1px solid #d1d5db;
+              background: #f9fafb;
+              cursor: pointer;
+              color: #374151;
+              font-family: inherit;
+            "
+            data-i18n="reportScreenshot"
+          >
+            Скриншот
+          </button>
+          <button
+            id="report-send-btn"
+            style="
+              flex: 1;
+              padding: 8px;
+              font-size: 12px;
+              border-radius: 8px;
+              border: none;
+              background: #2563eb;
+              color: #fff;
+              cursor: pointer;
+              font-weight: 600;
+              font-family: inherit;
+            "
+            data-i18n="reportSend"
+          >
+            Отправить
+          </button>
+        </div>
+        <div
+          id="report-status"
+          style="margin-top: 6px; font-size: 12px; text-align: center; display: none"
+        ></div>
+      </div>
+    </div>
+
+    <div class="ad-wrap" id="ad-wrap">
+      <button class="ad-toggle" id="ad-toggle">
+        <span> Партнёрское сообщение</span>
+        <span class="ad-toggle-icon" id="ad-icon">▼</span>
+      </button>
+      <div class="ad-box" id="ad-box">
+        <div class="ad-inner" id="ad-inner">
+          <span class="ad-loading">Загрузка...</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="sentry.js"></script>
+    <script src="sentry-init.js"></script>
+    <script src="i18n.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
