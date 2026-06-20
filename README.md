@@ -5,7 +5,7 @@
 <h3 align="center">Comprehensive privacy protection Security and Smart website analysis <b>Disposable Email</b> • <b>Secure Autofill</b> • <b>All-in-One Privacy Suite</b></h3>
 
 <p align="center">
-    <b>MiniShield-Extension</b> is a multifunctional browser extension that not only blocks trackers and ads but also provides deep threat analysis using neural networks, integration with antivirus databases, and smart data management.
+    <b>MiniShield-Extension</b> is a multifunctional browser extension that not only blocks trackers and ads but also provides deep threat analysis using neural networks, integration with antivirus databases, have anonymous mail, autofill, cookie blocker and smart data management and anymore feature.
 </p>
 
 <br />
